@@ -3,7 +3,7 @@
     <type>com.microchip.mplab.nbide.embedded.makeproject</type>
     <configuration>
         <data xmlns="http://www.netbeans.org/ns/make-project/1">
-            <name>PIC18_Bootloader_Test5</name>
+            <name>PIC18_PICDuino_Bootloader</name>
             <name>PIC18_Bootloader_Test4__WORKS_DO_NOT_TOUCH</name>
             <creation-uuid>0a320355-d4e1-49a0-9f92-c3e2de8d57bd</creation-uuid>
             <make-project-type>0</make-project-type>

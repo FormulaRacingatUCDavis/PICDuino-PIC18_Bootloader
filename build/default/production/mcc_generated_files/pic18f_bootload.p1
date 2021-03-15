@@ -3513,8 +3513,8 @@ Version 4.0 HI-TECH Software Intermediate Code
 [; ;mcc_generated_files/pic18f_bootload.c: 283:         TABLAT = frame.data[i];
 [e = _TABLAT *U + &U . . _frame 0 8 * -> _i `ux -> -> # *U &U . . _frame 0 8 `ui `ux ]
 "284
-[; ;mcc_generated_files/pic18f_bootload.c: 284:         if ((TBLPTR >= 0x010000) && (frame.address_U != 0x20) && (frame.address_U != 0x30))
-[e $ ! && && >= -> _TBLPTR `l -> 65536 `l != -> . . _frame 0 6 `i -> 32 `i != -> . . _frame 0 6 `i -> 48 `i 3244  ]
+[; ;mcc_generated_files/pic18f_bootload.c: 284:         if (TBLPTR >= 0x010000)
+[e $ ! >= -> _TBLPTR `l -> 65536 `l 3244  ]
 "285
 [; ;mcc_generated_files/pic18f_bootload.c: 285:         {
 {
@@ -3813,116 +3813,110 @@ Version 4.0 HI-TECH Software Intermediate Code
 "404
 [; ;mcc_generated_files/pic18f_bootload.c: 404:     check_sum = 0;
 [e = _check_sum -> -> 0 `i `us ]
-"405
-[; ;mcc_generated_files/pic18f_bootload.c: 405:     length = frame.data_length;
+"406
+[; ;mcc_generated_files/pic18f_bootload.c: 406:     length = frame.data_length;
 [e = _length . . _frame 0 1 ]
-"409
-[; ;mcc_generated_files/pic18f_bootload.c: 409:     for (i = 0; i < length; i += 2)
+"408
+[; ;mcc_generated_files/pic18f_bootload.c: 408:     for (i = 0; i < length; i ++)
 {
 [e = _i -> -> 0 `i `us ]
 [e $U 3268  ]
 [e :U 3265 ]
-"410
-[; ;mcc_generated_files/pic18f_bootload.c: 410:     {
+"409
+[; ;mcc_generated_files/pic18f_bootload.c: 409:     {
 {
+"410
+[; ;mcc_generated_files/pic18f_bootload.c: 410:         __asm("TBLRD *+");
+[; <" TBLRD *+ ;# ">
 "411
-[; ;mcc_generated_files/pic18f_bootload.c: 411:         __asm("TBLRD *+");
-[; <" TBLRD *+ ;# ">
+[; ;mcc_generated_files/pic18f_bootload.c: 411:         check_sum += (uint16_t)(~TABLAT);
+[e =+ _check_sum -> -> ~ -> _TABLAT `i `us `us ]
 "412
-[; ;mcc_generated_files/pic18f_bootload.c: 412:         check_sum += (uint16_t)TABLAT;
-[e =+ _check_sum -> -> _TABLAT `us `us ]
-"413
-[; ;mcc_generated_files/pic18f_bootload.c: 413:         __asm("TBLRD *+");
-[; <" TBLRD *+ ;# ">
-"414
-[; ;mcc_generated_files/pic18f_bootload.c: 414:         check_sum += (uint16_t)TABLAT << 8;
-[e =+ _check_sum -> << -> -> _TABLAT `us `ui -> 8 `i `us ]
-"415
-[; ;mcc_generated_files/pic18f_bootload.c: 415:      }
+[; ;mcc_generated_files/pic18f_bootload.c: 412:      }
 }
-[e =+ _i -> -> 2 `i `us ]
+[e ++ _i -> -> 1 `i `us ]
 [e :U 3268 ]
 [e $ < -> _i `ui -> _length `ui 3265  ]
 [e :U 3266 ]
 }
-"416
-[; ;mcc_generated_files/pic18f_bootload.c: 416:      frame.data[0] = (uint8_t) (check_sum & 0x00FF);
+"413
+[; ;mcc_generated_files/pic18f_bootload.c: 413:      frame.data[0] = (uint8_t) (check_sum & 0x00FF);
 [e = *U + &U . . _frame 0 8 * -> -> -> 0 `i `ui `ux -> -> # *U &U . . _frame 0 8 `ui `ux -> & -> _check_sum `ui -> -> 255 `i `ui `uc ]
-"417
-[; ;mcc_generated_files/pic18f_bootload.c: 417:      frame.data[1] = (uint8_t)((check_sum & 0xFF00) >> 8);
+"414
+[; ;mcc_generated_files/pic18f_bootload.c: 414:      frame.data[1] = (uint8_t)((check_sum & 0xFF00) >> 8);
 [e = *U + &U . . _frame 0 8 * -> -> -> 1 `i `ui `ux -> -> # *U &U . . _frame 0 8 `ui `ux -> >> & -> _check_sum `ui -> 65280 `ui -> 8 `i `uc ]
-"418
-[; ;mcc_generated_files/pic18f_bootload.c: 418:      return (11);
+"415
+[; ;mcc_generated_files/pic18f_bootload.c: 415:      return (11);
 [e ) -> -> 11 `i `uc ]
 [e $UE 3264  ]
-"419
-[; ;mcc_generated_files/pic18f_bootload.c: 419: }
+"416
+[; ;mcc_generated_files/pic18f_bootload.c: 416: }
 [e :UE 3264 ]
 }
-"427
-[; ;mcc_generated_files/pic18f_bootload.c: 427: void StartWrite()
+"424
+[; ;mcc_generated_files/pic18f_bootload.c: 424: void StartWrite()
 [v _StartWrite `(v ~T0 @X0 1 ef ]
-"428
-[; ;mcc_generated_files/pic18f_bootload.c: 428: {
+"425
+[; ;mcc_generated_files/pic18f_bootload.c: 425: {
 {
 [e :U _StartWrite ]
 [f ]
-"429
-[; ;mcc_generated_files/pic18f_bootload.c: 429:     __asm ("banksel NVMCON2");
+"426
+[; ;mcc_generated_files/pic18f_bootload.c: 426:     __asm ("banksel NVMCON2");
 [; <" banksel NVMCON2 ;# ">
-"430
-[; ;mcc_generated_files/pic18f_bootload.c: 430:     __asm ("movf _EE_Key_1, w, c");
+"427
+[; ;mcc_generated_files/pic18f_bootload.c: 427:     __asm ("movf _EE_Key_1, w, c");
 [; <" movf _EE_Key_1, w, c ;# ">
-"431
-[; ;mcc_generated_files/pic18f_bootload.c: 431:     __asm ("movwf NVMCON2, b");
+"428
+[; ;mcc_generated_files/pic18f_bootload.c: 428:     __asm ("movwf NVMCON2, b");
 [; <" movwf NVMCON2, b ;# ">
-"432
-[; ;mcc_generated_files/pic18f_bootload.c: 432:     __asm ("movf _EE_Key_2, w, c");
+"429
+[; ;mcc_generated_files/pic18f_bootload.c: 429:     __asm ("movf _EE_Key_2, w, c");
 [; <" movf _EE_Key_2, w, c ;# ">
-"433
-[; ;mcc_generated_files/pic18f_bootload.c: 433:     __asm ("movwf NVMCON2, b");
+"430
+[; ;mcc_generated_files/pic18f_bootload.c: 430:     __asm ("movwf NVMCON2, b");
 [; <" movwf NVMCON2, b ;# ">
-"434
-[; ;mcc_generated_files/pic18f_bootload.c: 434:     __asm ("bsf   NVMCON1,1");
+"431
+[; ;mcc_generated_files/pic18f_bootload.c: 431:     __asm ("bsf   NVMCON1,1");
 [; <" bsf   NVMCON1,1 ;# ">
-"435
-[; ;mcc_generated_files/pic18f_bootload.c: 435:     __nop();
+"432
+[; ;mcc_generated_files/pic18f_bootload.c: 432:     __nop();
 [e ( ___nop ..  ]
-"436
-[; ;mcc_generated_files/pic18f_bootload.c: 436:     __nop();
+"433
+[; ;mcc_generated_files/pic18f_bootload.c: 433:     __nop();
 [e ( ___nop ..  ]
-"437
-[; ;mcc_generated_files/pic18f_bootload.c: 437:     return;
+"434
+[; ;mcc_generated_files/pic18f_bootload.c: 434:     return;
 [e $UE 3269  ]
-"438
-[; ;mcc_generated_files/pic18f_bootload.c: 438: }
+"435
+[; ;mcc_generated_files/pic18f_bootload.c: 435: }
 [e :UE 3269 ]
 }
-"445
-[; ;mcc_generated_files/pic18f_bootload.c: 445: void Check_Device_Reset ()
+"442
+[; ;mcc_generated_files/pic18f_bootload.c: 442: void Check_Device_Reset ()
 [v _Check_Device_Reset `(v ~T0 @X0 1 ef ]
-"446
-[; ;mcc_generated_files/pic18f_bootload.c: 446: {
+"443
+[; ;mcc_generated_files/pic18f_bootload.c: 443: {
 {
 [e :U _Check_Device_Reset ]
 [f ]
-"447
-[; ;mcc_generated_files/pic18f_bootload.c: 447:     if (reset_pending == 1)
+"444
+[; ;mcc_generated_files/pic18f_bootload.c: 444:     if (reset_pending == 1)
 [e $ ! == -> _reset_pending `i -> 1 `i 3271  ]
-"448
-[; ;mcc_generated_files/pic18f_bootload.c: 448:     {
+"445
+[; ;mcc_generated_files/pic18f_bootload.c: 445:     {
 {
-"449
-[; ;mcc_generated_files/pic18f_bootload.c: 449:         __asm("reset");
+"446
+[; ;mcc_generated_files/pic18f_bootload.c: 446:         __asm("reset");
 [; <" reset ;# ">
-"450
-[; ;mcc_generated_files/pic18f_bootload.c: 450:     }
+"447
+[; ;mcc_generated_files/pic18f_bootload.c: 447:     }
 }
 [e :U 3271 ]
-"451
-[; ;mcc_generated_files/pic18f_bootload.c: 451:     return;
+"448
+[; ;mcc_generated_files/pic18f_bootload.c: 448:     return;
 [e $UE 3270  ]
-"452
-[; ;mcc_generated_files/pic18f_bootload.c: 452: }
+"449
+[; ;mcc_generated_files/pic18f_bootload.c: 449: }
 [e :UE 3270 ]
 }

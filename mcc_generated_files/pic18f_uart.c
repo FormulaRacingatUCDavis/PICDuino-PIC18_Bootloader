@@ -91,11 +91,11 @@ void Run_Bootloader()
                     }
                 }
             }
-            __delay_ms(5);
+            //__delay_ms(2);
         }
         
         IO_RB5_SetLow();
-        __delay_ms(10);
+        //__delay_ms(5);
 
         msg_length = ProcessBootBuffer();
 
@@ -109,7 +109,7 @@ void Run_Bootloader()
             if(UART1_is_tx_ready()){
                 UART1_Write(frame.buffer[index++]);
             }
-            __delay_ms(10);
+            //__delay_ms(2);
         }
 
     }

@@ -5,7 +5,7 @@ Linker command line:
 -W-3 --edf=D:\Program Files\Microchip\xc8\v2.31\pic\dat\en_msgs.txt -cn \
   -h+dist/default/production\PIC18_Bootloader_Test5.X.production.sym \
   --cmf=dist/default/production\PIC18_Bootloader_Test5.X.production.cmf -z \
-  -Q18F26K83 -oC:\Users\leoja\AppData\Local\Temp\s93o.2 \
+  -Q18F26K83 -oC:\Users\leoja\AppData\Local\Temp\s7gk.2 \
   --defsym=__MPLAB_BUILD=1 \
   -Mdist/default/production/PIC18_Bootloader_Test5.X.production.map -E1 \
   -ver=XC8 Compiler --acfsm=1493 -ASTACK=0E9h-0FFFh -pstack=STACK \
@@ -24,7 +24,7 @@ Linker command line:
   -pfarbss=FARRAM,fardata=FARRAM,nvFARRAM=FARRAM \
   -pintsave_regs=BIGRAM,bigbss=BIGRAM,bigdata=BIGRAM -pbss=RAM \
   -pidata=CODE,irdata=CODE,ibigdata=CODE,ifardata=CODE -prparam=COMRAM \
-  C:\Users\leoja\AppData\Local\Temp\s93o.o \
+  C:\Users\leoja\AppData\Local\Temp\s7gk.o \
   dist/default/production\PIC18_Bootloader_Test5.X.production.o 
 
 Object code version is 3.11
@@ -34,7 +34,7 @@ Machine type is 18F26K83
 
 
                 Name                               Link     Load   Length Selector   Space Scale
-C:\Users\leoja\AppData\Local\Temp\s93o.o
+C:\Users\leoja\AppData\Local\Temp\s7gk.o
                 idloc                            200000   200000       10        0       5
                 config                           300000   300000        A        0       4
                 init                                8FC      8FC        4      47E       0
@@ -42,41 +42,41 @@ C:\Users\leoja\AppData\Local\Temp\s93o.o
 dist/default/production\PIC18_Bootloader_Test5.X.production.o
                 idloc                            200000   200000       10        0       5
                 config                           300000   300000        A        0       4
-                text27                              234      234       5A      11A       0
-                text26                               CC       CC       14       66       0
-                text25                              350      350       70      1A8       0
-                text24                               BA       BA       12       5D       0
-                text23                              3C0      3C0       86      1E0       0
-                text22                              446      446       86      223       0
-                text21                              28E      28E       5A      147       0
-                text20                              4CC      4CC       8C      266       0
-                text19                              6B2      6B2      104      359       0
-                text18                              5F4      5F4       BE      2FA       0
-                text17                               82       82        2       41       0
-                text16                               84       84        2       42       0
-                text15                               86       86        2       43       0
-                text14                              558      558       9C      2AC       0
-                text13                              124      124       1A       92       0
-                text12                               E0       E0       16       70       0
-                text11                              184      184       2C       C2       0
-                text10                              7B6      7B6      146      3DB       0
-                text9                               1B0      1B0       2E       D8       0
-                text8                               10C      10C       18       86       0
-                text7                               1DE      1DE       56       EF       0
-                text6                               160      160       24       B0       0
-                text5                                90       90        A       48       0
-                text4                                9A       9A        A       4D       0
-                text3                                A4       A4        A       52       0
-                text2                               2E8      2E8       68      174       0
-                text1                                F6       F6       16       7B       0
-                cstackCOMRAM                          2        2        D        2       1
+                text27                              280      280       5A      140       0
+                text26                              118      118       14       8C       0
+                text25                              39C      39C       74      1CE       0
+                text24                              106      106       12       83       0
+                text23                              410      410       86      208       0
+                text22                              496      496       86      24B       0
+                text21                              2DA      2DA       5A      16D       0
+                text20                              51C      51C       8C      28E       0
+                text19                              702      702       E0      381       0
+                text18                              644      644       BE      322       0
+                text17                               CE       CE        2       67       0
+                text16                               D0       D0        2       68       0
+                text15                               D2       D2        2       69       0
+                text14                              5A8      5A8       9C      2D4       0
+                text13                              170      170       1A       B8       0
+                text12                              12C      12C       16       96       0
+                text11                              1D0      1D0       2C       E8       0
+                text10                              7E2      7E2      11A      3F1       0
+                text9                               1FC      1FC       2E       FE       0
+                text8                               158      158       18       AC       0
+                text7                               22A      22A       56      115       0
+                text6                               1AC      1AC       24       D6       0
+                text5                                DC       DC        A       6E       0
+                text4                                E6       E6        A       73       0
+                text3                                F0       F0        A       78       0
+                text2                               334      334       68      19A       0
+                text1                               142      142       16       A1       0
+                cstackCOMRAM                          2        2        E        2       1
                 bssBANK0                             60       60       89       60       1
-                bssCOMRAM                             F        F        8        2       1
-                cinit                               13E      13E       22       9F       0
-                nvCOMRAM                             17       17        6        2       1
-                text0                                AE       AE        C       57       0
-                intcodelo                            88       88        4       44       0
-                intcode                              8C       8C        4       46       0
+                bssCOMRAM                            10       10        8        2       1
+                cinit                               18A      18A       22       C5       0
+                nvCOMRAM                             18       18        6        2       1
+                text0                                FA       FA        C       7D       0
+                intcodelo                            D4       D4        4       6A       0
+                intcode                              D8       D8        4       6C       0
 
 TOTAL           Name                               Link     Load   Length     Space
         CLASS   STACK          
@@ -84,44 +84,44 @@ TOTAL           Name                               Link     Load   Length     Sp
         CLASS   CODE           
                 init                                8FC      8FC        4         0
                 reset_vec                             0        0        4         0
-                text27                              234      234       5A         0
-                text26                               CC       CC       14         0
-                text25                              350      350       70         0
-                text24                               BA       BA       12         0
-                text23                              3C0      3C0       86         0
-                text22                              446      446       86         0
-                text21                              28E      28E       5A         0
-                text20                              4CC      4CC       8C         0
-                text19                              6B2      6B2      104         0
-                text18                              5F4      5F4       BE         0
-                text17                               82       82        2         0
-                text16                               84       84        2         0
-                text15                               86       86        2         0
-                text14                              558      558       9C         0
-                text13                              124      124       1A         0
-                text12                               E0       E0       16         0
-                text11                              184      184       2C         0
-                text10                              7B6      7B6      146         0
-                text9                               1B0      1B0       2E         0
-                text8                               10C      10C       18         0
-                text7                               1DE      1DE       56         0
-                text6                               160      160       24         0
-                text5                                90       90        A         0
-                text4                                9A       9A        A         0
-                text3                                A4       A4        A         0
-                text2                               2E8      2E8       68         0
-                text1                                F6       F6       16         0
-                cinit                               13E      13E       22         0
-                text0                                AE       AE        C         0
-                intcodelo                            88       88        4         0
-                intcode                              8C       8C        4         0
+                text27                              280      280       5A         0
+                text26                              118      118       14         0
+                text25                              39C      39C       74         0
+                text24                              106      106       12         0
+                text23                              410      410       86         0
+                text22                              496      496       86         0
+                text21                              2DA      2DA       5A         0
+                text20                              51C      51C       8C         0
+                text19                              702      702       E0         0
+                text18                              644      644       BE         0
+                text17                               CE       CE        2         0
+                text16                               D0       D0        2         0
+                text15                               D2       D2        2         0
+                text14                              5A8      5A8       9C         0
+                text13                              170      170       1A         0
+                text12                              12C      12C       16         0
+                text11                              1D0      1D0       2C         0
+                text10                              7E2      7E2      11A         0
+                text9                               1FC      1FC       2E         0
+                text8                               158      158       18         0
+                text7                               22A      22A       56         0
+                text6                               1AC      1AC       24         0
+                text5                                DC       DC        A         0
+                text4                                E6       E6        A         0
+                text3                                F0       F0        A         0
+                text2                               334      334       68         0
+                text1                               142      142       16         0
+                cinit                               18A      18A       22         0
+                text0                                FA       FA        C         0
+                intcodelo                            D4       D4        4         0
+                intcode                              D8       D8        4         0
 
         CLASS   CONST          
 
         CLASS   COMRAM         
-                cstackCOMRAM                          2        2        D         1
-                bssCOMRAM                             F        F        8         1
-                nvCOMRAM                             17       17        6         1
+                cstackCOMRAM                          2        2        E         1
+                bssCOMRAM                            10       10        8         1
+                nvCOMRAM                             18       18        6         1
 
         CLASS   ABS1           
                 abs_s1                                1        1        1         1
@@ -184,39 +184,39 @@ TOTAL           Name                               Link     Load   Length     Sp
 SEGMENTS        Name                           Load    Length   Top    Selector   Space  Class
 
                 reset_vec                      000000  000004  000004         0       0  CODE    
-                cstackCOMRAM                   000002  00001B  00001D         2       1  COMRAM  
+                cstackCOMRAM                   000002  00001C  00001E         2       1  COMRAM  
                 bssBANK0                       000060  000089  0000E9        60       1  BANK0   
-                text17                         000082  000002  000084        41       0  CODE    
-                text16                         000084  000002  000086        42       0  CODE    
-                text15                         000086  000002  000088        43       0  CODE    
-                intcodelo                      000088  000004  00008C        44       0  CODE    
-                intcode                        00008C  000004  000090        46       0  CODE    
-                text5                          000090  00000A  00009A        48       0  CODE    
-                text4                          00009A  00000A  0000A4        4D       0  CODE    
-                text3                          0000A4  00000A  0000AE        52       0  CODE    
-                text0                          0000AE  00000C  0000BA        57       0  CODE    
-                text24                         0000BA  000012  0000CC        5D       0  CODE    
-                text26                         0000CC  000014  0000E0        66       0  CODE    
-                text12                         0000E0  000016  0000F6        70       0  CODE    
-                text1                          0000F6  000016  00010C        7B       0  CODE    
-                text8                          00010C  000018  000124        86       0  CODE    
-                text13                         000124  00001A  00013E        92       0  CODE    
-                cinit                          00013E  000022  000160        9F       0  CODE    
-                text6                          000160  000024  000184        B0       0  CODE    
-                text11                         000184  00002C  0001B0        C2       0  CODE    
-                text9                          0001B0  00002E  0001DE        D8       0  CODE    
-                text7                          0001DE  000056  000234        EF       0  CODE    
-                text27                         000234  00005A  00028E       11A       0  CODE    
-                text21                         00028E  00005A  0002E8       147       0  CODE    
-                text2                          0002E8  000068  000350       174       0  CODE    
-                text25                         000350  000070  0003C0       1A8       0  CODE    
-                text23                         0003C0  000086  000446       1E0       0  CODE    
-                text22                         000446  000086  0004CC       223       0  CODE    
-                text20                         0004CC  00008C  000558       266       0  CODE    
-                text14                         000558  00009C  0005F4       2AC       0  CODE    
-                text18                         0005F4  0000BE  0006B2       2FA       0  CODE    
-                text19                         0006B2  000104  0007B6       359       0  CODE    
-                text10                         0007B6  000146  0008FC       3DB       0  CODE    
+                text17                         0000CE  000002  0000D0        67       0  CODE    
+                text16                         0000D0  000002  0000D2        68       0  CODE    
+                text15                         0000D2  000002  0000D4        69       0  CODE    
+                intcodelo                      0000D4  000004  0000D8        6A       0  CODE    
+                intcode                        0000D8  000004  0000DC        6C       0  CODE    
+                text5                          0000DC  00000A  0000E6        6E       0  CODE    
+                text4                          0000E6  00000A  0000F0        73       0  CODE    
+                text3                          0000F0  00000A  0000FA        78       0  CODE    
+                text0                          0000FA  00000C  000106        7D       0  CODE    
+                text24                         000106  000012  000118        83       0  CODE    
+                text26                         000118  000014  00012C        8C       0  CODE    
+                text12                         00012C  000016  000142        96       0  CODE    
+                text1                          000142  000016  000158        A1       0  CODE    
+                text8                          000158  000018  000170        AC       0  CODE    
+                text13                         000170  00001A  00018A        B8       0  CODE    
+                cinit                          00018A  000022  0001AC        C5       0  CODE    
+                text6                          0001AC  000024  0001D0        D6       0  CODE    
+                text11                         0001D0  00002C  0001FC        E8       0  CODE    
+                text9                          0001FC  00002E  00022A        FE       0  CODE    
+                text7                          00022A  000056  000280       115       0  CODE    
+                text27                         000280  00005A  0002DA       140       0  CODE    
+                text21                         0002DA  00005A  000334       16D       0  CODE    
+                text2                          000334  000068  00039C       19A       0  CODE    
+                text25                         00039C  000074  000410       1CE       0  CODE    
+                text23                         000410  000086  000496       208       0  CODE    
+                text22                         000496  000086  00051C       24B       0  CODE    
+                text20                         00051C  00008C  0005A8       28E       0  CODE    
+                text14                         0005A8  00009C  000644       2D4       0  CODE    
+                text18                         000644  0000BE  000702       322       0  CODE    
+                text19                         000702  0000E0  0007E2       381       0  CODE    
+                text10                         0007E2  00011A  0008FC       3F1       0  CODE    
                 init                           0008FC  000004  000900       47E       0  CODE    
 
 
@@ -239,11 +239,11 @@ UNUSED ADDRESS RANGES
         BANK7            000700-0007FF              100
         BANK8            000800-0008FF              100
         BANK9            000900-0009FF              100
-        BIGRAM           00001D-00005F               43
+        BIGRAM           00001E-00005F               42
                          0000E9-000FFF              F17
-        CODE             000004-000081               7E
-        COMRAM           00001D-00005F               43
-        CONST            000004-000081               7E
+        CODE             000004-0000CD               CA
+        COMRAM           00001E-00005F               42
+        CONST            000004-0000CD               CA
         EEDATA           310000-3103FF              400
         RAM              0000E9-000FFF              100
         SFR              003700-003FFF              100
@@ -252,15 +252,15 @@ UNUSED ADDRESS RANGES
                                   Symbol Table
 
 Bootload_Required@i                           cstackCOMRAM 000004
-Calc_Checksum@i                               cstackCOMRAM 000004
-Calc_Checksum@length                          cstackCOMRAM 000002
+Calc_Checksum@i                               cstackCOMRAM 000008
+Calc_Checksum@length                          cstackCOMRAM 000006
 Erase_Flash@i                                 cstackCOMRAM 000002
 Get_Version_Data@i                            cstackCOMRAM 000002
-ProcessBootBuffer@len                         cstackCOMRAM 00000A
+ProcessBootBuffer@len                         cstackCOMRAM 00000C
 Read_Config@i                                 cstackCOMRAM 000004
-Run_Bootloader@ch                             cstackCOMRAM 00000C
-Run_Bootloader@index                          cstackCOMRAM 00000E
-Run_Bootloader@msg_length                     cstackCOMRAM 00000D
+Run_Bootloader@ch                             cstackCOMRAM 00000D
+Run_Bootloader@index                          cstackCOMRAM 00000F
+Run_Bootloader@msg_length                     cstackCOMRAM 00000E
 UART1_SetErrorHandler@interruptHandler        cstackCOMRAM 000002
 UART1_SetFramingErrorHandler@interruptHandler cstackCOMRAM 000002
 UART1_SetOverrunErrorHandler@interruptHandler cstackCOMRAM 000002
@@ -270,15 +270,15 @@ Write_Flash@i                                 cstackCOMRAM 000006
 _ANSELA                                       (abs)        003A40
 _ANSELB                                       (abs)        003A50
 _ANSELC                                       (abs)        003A60
-_BOOTLOADER_Initialize                        text9        0001B0
+_BOOTLOADER_Initialize                        text9        0001FC
 _BSR                                          (abs)        003FE0
-_Bootload_Required                            text27       000234
-_Calc_Checksum                                text25       000350
-_Check_Device_Reset                           text26       0000CC
+_Bootload_Required                            text27       000280
+_Calc_Checksum                                text25       00039C
+_Check_Device_Reset                           text26       000118
 _EE_Key_1                                     (abs)        000000
 _EE_Key_2                                     (abs)        000001
-_Erase_Flash                                  text23       0003C0
-_Get_Version_Data                             text22       000446
+_Erase_Flash                                  text23       000410
+_Get_Version_Data                             text22       000496
 _INLVLA                                       (abs)        003A44
 _INLVLB                                       (abs)        003A54
 _INLVLC                                       (abs)        003A64
@@ -301,9 +301,9 @@ _OSCCON1                                      (abs)        0039D9
 _OSCCON3                                      (abs)        0039DB
 _OSCEN                                        (abs)        0039DD
 _OSCFRQ                                       (abs)        0039DF
-_OSCILLATOR_Initialize                        text8        00010C
+_OSCILLATOR_Initialize                        text8        000158
 _OSCTUNE                                      (abs)        0039DE
-_PIN_MANAGER_Initialize                       text7        0001DE
+_PIN_MANAGER_Initialize                       text7        00022A
 _PIR0bits                                     (abs)        0039A0
 _PIR3bits                                     (abs)        0039A3
 _PMD0                                         (abs)        0039C0
@@ -314,17 +314,17 @@ _PMD4                                         (abs)        0039C4
 _PMD5                                         (abs)        0039C5
 _PMD6                                         (abs)        0039C6
 _PMD7                                         (abs)        0039C7
-_PMD_Initialize                               text6        000160
-_ProcessBootBuffer                            text18       0005F4
+_PMD_Initialize                               text6        0001AC
+_ProcessBootBuffer                            text18       000644
 _RC6PPS                                       (abs)        003A16
-_Read_Config                                  text21       00028E
-_Run_Bootloader                               text10       0007B6
+_Read_Config                                  text21       0002DA
+_Run_Bootloader                               text10       0007E2
 _SLRCONA                                      (abs)        003A43
 _SLRCONB                                      (abs)        003A53
 _SLRCONC                                      (abs)        003A63
 _STKPTR                                       (abs)        003FFC
-_SYSTEM_Initialize                            text1        0000F6
-_StartWrite                                   text24       0000BA
+_SYSTEM_Initialize                            text1        000142
+_StartWrite                                   text24       000106
 _TABLAT                                       (abs)        003FF5
 _TBLPTR                                       (abs)        003FF6
 _TBLPTRH                                      (abs)        003FF7
@@ -354,27 +354,27 @@ _U1RXPPS                                      (abs)        003AE7
 _U1TXB                                        (abs)        003DEA
 _U1UIR                                        (abs)        003DF8
 _U1UIRbits                                    (abs)        003DF8
-_UART1_DefaultErrorHandler                    text17       000082
-_UART1_DefaultFramingErrorHandler             text16       000084
-_UART1_DefaultOverrunErrorHandler             text15       000086
-_UART1_ErrorHandler                           nvCOMRAM     000017
-_UART1_FramingErrorHandler                    nvCOMRAM     00001B
-_UART1_Initialize                             text2        0002E8
-_UART1_OverrunErrorHandler                    nvCOMRAM     000019
-_UART1_Read                                   text14       000558
-_UART1_SetErrorHandler                        text5        000090
-_UART1_SetFramingErrorHandler                 text4        00009A
-_UART1_SetOverrunErrorHandler                 text3        0000A4
-_UART1_Write                                  text13       000124
-_UART1_is_rx_ready                            text12       0000E0
-_UART1_is_tx_ready                            text11       000184
-_UART1_is_tx_ready$747                        cstackCOMRAM 000002
+_UART1_DefaultErrorHandler                    text17       0000CE
+_UART1_DefaultFramingErrorHandler             text16       0000D0
+_UART1_DefaultOverrunErrorHandler             text15       0000D2
+_UART1_ErrorHandler                           nvCOMRAM     000018
+_UART1_FramingErrorHandler                    nvCOMRAM     00001C
+_UART1_Initialize                             text2        000334
+_UART1_OverrunErrorHandler                    nvCOMRAM     00001A
+_UART1_Read                                   text14       0005A8
+_UART1_SetErrorHandler                        text5        0000DC
+_UART1_SetFramingErrorHandler                 text4        0000E6
+_UART1_SetOverrunErrorHandler                 text3        0000F0
+_UART1_Write                                  text13       000170
+_UART1_is_rx_ready                            text12       00012C
+_UART1_is_tx_ready                            text11       0001D0
+_UART1_is_tx_ready$745                        cstackCOMRAM 000002
 _WPUA                                         (abs)        003A41
 _WPUB                                         (abs)        003A51
 _WPUC                                         (abs)        003A61
 _WPUE                                         (abs)        003A81
-_Write_Config                                 text20       0004CC
-_Write_Flash                                  text19       0006B2
+_Write_Config                                 text20       00051C
+_Write_Flash                                  text19       000702
 __HRAM                                        (abs)        000000
 __Habs1                                       abs1         000000
 __Hbank0                                      bank0        000000
@@ -579,70 +579,70 @@ ___rparam_used                                (abs)        000001
 ___sp                                         stack        000000
 __accesstop                                   (abs)        000060
 __activetblptr                                (abs)        000002
-__end_of_BOOTLOADER_Initialize                text9        0001DE
-__end_of_Bootload_Required                    text27       00028E
-__end_of_Calc_Checksum                        text25       0003C0
-__end_of_Check_Device_Reset                   text26       0000E0
-__end_of_Erase_Flash                          text23       000446
-__end_of_Get_Version_Data                     text22       0004CC
-__end_of_OSCILLATOR_Initialize                text8        000124
-__end_of_PIN_MANAGER_Initialize               text7        000234
-__end_of_PMD_Initialize                       text6        000184
-__end_of_ProcessBootBuffer                    text18       0006B2
-__end_of_Read_Config                          text21       0002E8
+__end_of_BOOTLOADER_Initialize                text9        00022A
+__end_of_Bootload_Required                    text27       0002DA
+__end_of_Calc_Checksum                        text25       000410
+__end_of_Check_Device_Reset                   text26       00012C
+__end_of_Erase_Flash                          text23       000496
+__end_of_Get_Version_Data                     text22       00051C
+__end_of_OSCILLATOR_Initialize                text8        000170
+__end_of_PIN_MANAGER_Initialize               text7        000280
+__end_of_PMD_Initialize                       text6        0001D0
+__end_of_ProcessBootBuffer                    text18       000702
+__end_of_Read_Config                          text21       000334
 __end_of_Run_Bootloader                       text10       0008FC
-__end_of_SYSTEM_Initialize                    text1        00010C
-__end_of_StartWrite                           text24       0000CC
-__end_of_UART1_DefaultErrorHandler            text17       000084
-__end_of_UART1_DefaultFramingErrorHandler     text16       000086
-__end_of_UART1_DefaultOverrunErrorHandler     text15       000088
-__end_of_UART1_Initialize                     text2        000350
-__end_of_UART1_Read                           text14       0005F4
-__end_of_UART1_SetErrorHandler                text5        00009A
-__end_of_UART1_SetFramingErrorHandler         text4        0000A4
-__end_of_UART1_SetOverrunErrorHandler         text3        0000AE
-__end_of_UART1_Write                          text13       00013E
-__end_of_UART1_is_rx_ready                    text12       0000F6
-__end_of_UART1_is_tx_ready                    text11       0001B0
-__end_of_Write_Config                         text20       000558
-__end_of_Write_Flash                          text19       0007B6
-__end_of__initialization                      cinit        000156
-__end_of_main                                 text0        0000BA
-__initialization                              cinit        00013E
+__end_of_SYSTEM_Initialize                    text1        000158
+__end_of_StartWrite                           text24       000118
+__end_of_UART1_DefaultErrorHandler            text17       0000D0
+__end_of_UART1_DefaultFramingErrorHandler     text16       0000D2
+__end_of_UART1_DefaultOverrunErrorHandler     text15       0000D4
+__end_of_UART1_Initialize                     text2        00039C
+__end_of_UART1_Read                           text14       000644
+__end_of_UART1_SetErrorHandler                text5        0000E6
+__end_of_UART1_SetFramingErrorHandler         text4        0000F0
+__end_of_UART1_SetOverrunErrorHandler         text3        0000FA
+__end_of_UART1_Write                          text13       00018A
+__end_of_UART1_is_rx_ready                    text12       000142
+__end_of_UART1_is_tx_ready                    text11       0001FC
+__end_of_Write_Config                         text20       0005A8
+__end_of_Write_Flash                          text19       0007E2
+__end_of__initialization                      cinit        0001A2
+__end_of_main                                 text0        000106
+__initialization                              cinit        00018A
 __pbssBANK0                                   bssBANK0     000060
-__pbssCOMRAM                                  bssCOMRAM    00000F
-__pcinit                                      cinit        00013E
+__pbssCOMRAM                                  bssCOMRAM    000010
+__pcinit                                      cinit        00018A
 __pcstackCOMRAM                               cstackCOMRAM 000002
-__pnvCOMRAM                                   nvCOMRAM     000017
-__ptext0                                      text0        0000AE
-__ptext1                                      text1        0000F6
-__ptext10                                     text10       0007B6
-__ptext11                                     text11       000184
-__ptext12                                     text12       0000E0
-__ptext13                                     text13       000124
-__ptext14                                     text14       000558
-__ptext15                                     text15       000086
-__ptext16                                     text16       000084
-__ptext17                                     text17       000082
-__ptext18                                     text18       0005F4
-__ptext19                                     text19       0006B2
-__ptext2                                      text2        0002E8
-__ptext20                                     text20       0004CC
-__ptext21                                     text21       00028E
-__ptext22                                     text22       000446
-__ptext23                                     text23       0003C0
-__ptext24                                     text24       0000BA
-__ptext25                                     text25       000350
-__ptext26                                     text26       0000CC
-__ptext27                                     text27       000234
+__pnvCOMRAM                                   nvCOMRAM     000018
+__ptext0                                      text0        0000FA
+__ptext1                                      text1        000142
+__ptext10                                     text10       0007E2
+__ptext11                                     text11       0001D0
+__ptext12                                     text12       00012C
+__ptext13                                     text13       000170
+__ptext14                                     text14       0005A8
+__ptext15                                     text15       0000D2
+__ptext16                                     text16       0000D0
+__ptext17                                     text17       0000CE
+__ptext18                                     text18       000644
+__ptext19                                     text19       000702
+__ptext2                                      text2        000334
+__ptext20                                     text20       00051C
+__ptext21                                     text21       0002DA
+__ptext22                                     text22       000496
+__ptext23                                     text23       000410
+__ptext24                                     text24       000106
+__ptext25                                     text25       00039C
+__ptext26                                     text26       000118
+__ptext27                                     text27       000280
 __ptext28                                     text28       000000
-__ptext3                                      text3        0000A4
-__ptext4                                      text4        00009A
-__ptext5                                      text5        000090
-__ptext6                                      text6        000160
-__ptext7                                      text7        0001DE
-__ptext8                                      text8        00010C
-__ptext9                                      text9        0001B0
+__ptext3                                      text3        0000F0
+__ptext4                                      text4        0000E6
+__ptext5                                      text5        0000DC
+__ptext6                                      text6        0001AC
+__ptext7                                      text7        00022A
+__ptext8                                      text8        000158
+__ptext9                                      text9        0001FC
 __ramtop                                      ramtop       001000
 __size_of_BOOTLOADER_Initialize               (abs)        000000
 __size_of_Bootload_Required                   (abs)        000000
@@ -672,15 +672,15 @@ __size_of_UART1_is_tx_ready                   (abs)        000000
 __size_of_Write_Config                        (abs)        000000
 __size_of_Write_Flash                         (abs)        000000
 __size_of_main                                (abs)        000000
-_check_sum                                    bssCOMRAM    000011
-_counter                                      bssCOMRAM    00000F
+_check_sum                                    bssCOMRAM    000012
+_counter                                      bssCOMRAM    000010
 _frame                                        bssBANK0     000060
-_main                                         text0        0000AE
-_reset_pending                                bssCOMRAM    000014
-_rx_data                                      bssCOMRAM    000016
-_tx_data                                      bssCOMRAM    000015
-_uart1RxLastError                             bssCOMRAM    000013
-end_of_initialization                         cinit        000156
+_main                                         text0        0000FA
+_reset_pending                                bssCOMRAM    000015
+_rx_data                                      bssCOMRAM    000017
+_tx_data                                      bssCOMRAM    000016
+_uart1RxLastError                             bssCOMRAM    000014
+end_of_initialization                         cinit        0001A2
 intlevel0                                     text         000000
 intlevel1                                     text         000000
 intlevel2                                     text         000000
@@ -688,7 +688,7 @@ intlevel3                                     text         000000
 stackhi                                       (abs)        000FFF
 stacklo                                       (abs)        0000E9
 start                                         init         0008FC
-start_initialization                          cinit        00013E
+start_initialization                          cinit        00018A
 
 
 FUNCTION INFORMATION:
@@ -1002,9 +1002,9 @@ Total ram usage:        0 bytes
  Parameters:    Size  Location     Type
 		None
  Auto vars:     Size  Location     Type
-  ch              1   10[COMRAM] unsigned char 
-  index           1   12[COMRAM] volatile unsigned char 
-  msg_length      1   11[COMRAM] unsigned char 
+  ch              1   11[COMRAM] unsigned char 
+  index           1   13[COMRAM] volatile unsigned char 
+  msg_length      1   12[COMRAM] unsigned char 
  Return value:  Size  Location     Type
                   1    wreg      void 
  Registers used:
@@ -1016,9 +1016,9 @@ Total ram usage:        0 bytes
  Data sizes:     COMRAM   BANK0   BANK1   BANK2   BANK3   BANK4   BANK5   BANK6   BANK7   BANK8   BANK9  BANK10  BANK11  BANK12  BANK13  BANK14  BANK15
       Params:         0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
       Locals:         3       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
-      Temps:          1       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
-      Totals:         4       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
-Total ram usage:        4 bytes
+      Temps:          0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+      Totals:         3       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+Total ram usage:        3 bytes
  Hardware stack levels used:    1
  Hardware stack levels required when called:    3
  This function calls:
@@ -1249,7 +1249,7 @@ Total ram usage:        0 bytes
  Parameters:    Size  Location     Type
 		None
  Auto vars:     Size  Location     Type
-  len             1    8[COMRAM] unsigned char 
+  len             1   10[COMRAM] unsigned char 
  Return value:  Size  Location     Type
                   1    wreg      unsigned char 
  Registers used:
@@ -1428,7 +1428,7 @@ Total ram usage:        2 bytes
 
  *************** function _StartWrite *****************
  Defined at:
-		line 427 in file "mcc_generated_files/pic18f_bootload.c"
+		line 424 in file "mcc_generated_files/pic18f_bootload.c"
  Parameters:    Size  Location     Type
 		None
  Auto vars:     Size  Location     Type
@@ -1463,8 +1463,8 @@ Total ram usage:        0 bytes
  Parameters:    Size  Location     Type
 		None
  Auto vars:     Size  Location     Type
-  i               2    2[COMRAM] unsigned short 
-  length          2    0[COMRAM] unsigned short 
+  i               2    6[COMRAM] unsigned short 
+  length          2    4[COMRAM] unsigned short 
  Return value:  Size  Location     Type
                   1    wreg      unsigned char 
  Registers used:
@@ -1476,9 +1476,9 @@ Total ram usage:        0 bytes
  Data sizes:     COMRAM   BANK0   BANK1   BANK2   BANK3   BANK4   BANK5   BANK6   BANK7   BANK8   BANK9  BANK10  BANK11  BANK12  BANK13  BANK14  BANK15
       Params:         0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
       Locals:         4       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
-      Temps:          0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
-      Totals:         4       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
-Total ram usage:        4 bytes
+      Temps:          4       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+      Totals:         8       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+Total ram usage:        8 bytes
  Hardware stack levels used:    1
  This function calls:
 		Nothing
@@ -1489,7 +1489,7 @@ Total ram usage:        4 bytes
 
  *************** function _Check_Device_Reset *****************
  Defined at:
-		line 445 in file "mcc_generated_files/pic18f_bootload.c"
+		line 442 in file "mcc_generated_files/pic18f_bootload.c"
  Parameters:    Size  Location     Type
 		None
  Auto vars:     Size  Location     Type
@@ -1550,59 +1550,59 @@ MODULE INFORMATION
 
 Module		Function		Class		Link	Load	Size
 mcc_generated_files/pin_manager.c
-		_PIN_MANAGER_Initialize		CODE           	01DE	0000	86
+		_PIN_MANAGER_Initialize		CODE           	022A	0000	86
 
 mcc_generated_files/pin_manager.c estimated size: 86
 
 mcc_generated_files/pic18f_uart.c
-		_Run_Bootloader		CODE           	07B6	0000	326
+		_Run_Bootloader		CODE           	07E2	0000	282
 
-mcc_generated_files/pic18f_uart.c estimated size: 326
+mcc_generated_files/pic18f_uart.c estimated size: 282
 
 mcc_generated_files/uart1.c
-		_UART1_Write   		CODE           	0124	0000	26
-		_UART1_SetFramingErrorHandler		CODE           	009A	0000	10
-		_UART1_SetOverrunErrorHandler		CODE           	00A4	0000	10
-		_UART1_Initialize		CODE           	02E8	0000	104
-		_UART1_SetErrorHandler		CODE           	0090	0000	10
-		_UART1_Read    		CODE           	0558	0000	156
-		_UART1_DefaultFramingErrorHandler		CODE           	0084	0000	2
-		_UART1_is_rx_ready		CODE           	00E0	0000	22
-		_UART1_is_tx_ready		CODE           	0184	0000	44
-		_UART1_DefaultErrorHandler		CODE           	0082	0000	2
-		_UART1_DefaultOverrunErrorHandler		CODE           	0086	0000	2
+		_UART1_Write   		CODE           	0170	0000	26
+		_UART1_SetFramingErrorHandler		CODE           	00E6	0000	10
+		_UART1_SetOverrunErrorHandler		CODE           	00F0	0000	10
+		_UART1_Initialize		CODE           	0334	0000	104
+		_UART1_SetErrorHandler		CODE           	00DC	0000	10
+		_UART1_Read    		CODE           	05A8	0000	156
+		_UART1_DefaultFramingErrorHandler		CODE           	00D0	0000	2
+		_UART1_is_rx_ready		CODE           	012C	0000	22
+		_UART1_is_tx_ready		CODE           	01D0	0000	44
+		_UART1_DefaultErrorHandler		CODE           	00CE	0000	2
+		_UART1_DefaultOverrunErrorHandler		CODE           	00D2	0000	2
 
 mcc_generated_files/uart1.c estimated size: 388
 
 shared
-		__initialization		CODE           	013E	0000	24
+		__initialization		CODE           	018A	0000	24
 
 shared estimated size: 24
 
 mcc_generated_files/mcc.c
-		_PMD_Initialize		CODE           	0160	0000	36
-		_OSCILLATOR_Initialize		CODE           	010C	0000	24
-		_SYSTEM_Initialize		CODE           	00F6	0000	22
+		_PMD_Initialize		CODE           	01AC	0000	36
+		_OSCILLATOR_Initialize		CODE           	0158	0000	24
+		_SYSTEM_Initialize		CODE           	0142	0000	22
 
 mcc_generated_files/mcc.c estimated size: 82
 
 mcc_generated_files/pic18f_bootload.c
-		_ProcessBootBuffer		CODE           	05F4	0000	190
-		_Calc_Checksum 		CODE           	0350	0000	112
-		_Write_Config  		CODE           	04CC	0000	140
-		_Write_Flash   		CODE           	06B2	0000	260
-		_Get_Version_Data		CODE           	0446	0000	134
-		_Check_Device_Reset		CODE           	00CC	0000	20
-		_Erase_Flash   		CODE           	03C0	0000	134
-		_Bootload_Required		CODE           	0234	0000	90
-		_Read_Config   		CODE           	028E	0000	90
-		_StartWrite    		CODE           	00BA	0000	18
-		_BOOTLOADER_Initialize		CODE           	01B0	0000	46
+		_ProcessBootBuffer		CODE           	0644	0000	190
+		_Calc_Checksum 		CODE           	039C	0000	116
+		_Write_Config  		CODE           	051C	0000	140
+		_Write_Flash   		CODE           	0702	0000	224
+		_Get_Version_Data		CODE           	0496	0000	134
+		_Check_Device_Reset		CODE           	0118	0000	20
+		_Erase_Flash   		CODE           	0410	0000	134
+		_Bootload_Required		CODE           	0280	0000	90
+		_Read_Config   		CODE           	02DA	0000	90
+		_StartWrite    		CODE           	0106	0000	18
+		_BOOTLOADER_Initialize		CODE           	01FC	0000	46
 
-mcc_generated_files/pic18f_bootload.c estimated size: 1234
+mcc_generated_files/pic18f_bootload.c estimated size: 1202
 
 main.c
-		_main          		CODE           	00AE	0000	12
+		_main          		CODE           	00FA	0000	12
 
 main.c estimated size: 12
 

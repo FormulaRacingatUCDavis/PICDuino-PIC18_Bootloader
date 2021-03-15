@@ -36726,7 +36726,7 @@ uint8_t Write_Flash()
     for (uint16_t i = 0; i < frame.data_length; i ++)
     {
         TABLAT = frame.data[i];
-        if ((TBLPTR >= 0x010000) && (frame.address_U != 0x20) && (frame.address_U != 0x30))
+        if (TBLPTR >= 0x010000)
         {
             frame.data[0] = 0xFE;
             return (10);
@@ -36825,16 +36825,13 @@ uint8_t Calc_Checksum()
     TBLPTRU = frame.address_U;
     NVMCON1 = 0x80;
     check_sum = 0;
+
     length = frame.data_length;
 
-
-
-    for (i = 0; i < length; i += 2)
+    for (i = 0; i < length; i ++)
     {
         __asm("TBLRD *+");
-        check_sum += (uint16_t)TABLAT;
-        __asm("TBLRD *+");
-        check_sum += (uint16_t)TABLAT << 8;
+        check_sum += (uint16_t)(~TABLAT);
      }
      frame.data[0] = (uint8_t) (check_sum & 0x00FF);
      frame.data[1] = (uint8_t)((check_sum & 0xFF00) >> 8);

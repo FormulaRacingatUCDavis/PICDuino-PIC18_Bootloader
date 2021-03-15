@@ -36617,11 +36617,11 @@ void Run_Bootloader()
                     }
                 }
             }
-            _delay((unsigned long)((5)*(16000000/4000.0)));
+
         }
 
         do { LATBbits.LATB5 = 0; } while(0);
-        _delay((unsigned long)((10)*(16000000/4000.0)));
+
 
         msg_length = ProcessBootBuffer();
 
@@ -36635,7 +36635,7 @@ void Run_Bootloader()
             if(UART1_is_tx_ready()){
                 UART1_Write(frame.buffer[index++]);
             }
-            _delay((unsigned long)((10)*(16000000/4000.0)));
+
         }
 
     }

@@ -281,7 +281,7 @@ uint8_t Write_Flash()
     for (uint16_t  i = 0; i < frame.data_length; i ++)
     {
         TABLAT = frame.data[i];
-        if ((TBLPTR >= END_FLASH) && (frame.address_U != 0x20) && (frame.address_U != 0x30))       //address out of range, and is not either config word address
+        if (TBLPTR >= END_FLASH)       //address out of range
         {
             frame.data[0] = ERROR_ADDRESS_OUT_OF_RANGE;
             return (10);
@@ -402,16 +402,13 @@ uint8_t Calc_Checksum()
     TBLPTRU = frame.address_U;
     NVMCON1 = 0x80;
     check_sum = 0;
+    
     length = frame.data_length;
-#if END_FLASH > 0x10000
-    length += ((uint32_t) frame.EE_key_1) << 16;
-#endif 
-    for (i = 0; i < length; i += 2)
+    
+    for (i = 0; i < length; i ++)
     {
         asm("TBLRD *+");
-        check_sum += (uint16_t)TABLAT;
-        asm("TBLRD *+");
-        check_sum += (uint16_t)TABLAT << 8;
+        check_sum += (uint16_t)(~TABLAT);
      }
      frame.data[0] = (uint8_t) (check_sum & 0x00FF);
      frame.data[1] = (uint8_t)((check_sum & 0xFF00) >> 8);

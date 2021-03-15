@@ -48,10 +48,6 @@ Version 4.0 HI-TECH Software Intermediate Code
 "350
 [; ;mcc_generated_files/uart1.h: 350: uint8_t UART1_Read(void);
 [v _UART1_Read `(uc ~T0 @X0 0 ef ]
-[v F22555 `(v ~T0 @X0 1 tf1`ul ]
-"203 D:/Program Files/Microchip/MPLABX/v5.45/packs/Microchip/PIC18F-K_DFP/1.4.87/xc8\pic\include\pic18.h
-[v __delay `JF22555 ~T0 @X0 0 e ]
-[p i __delay ]
 "32 mcc_generated_files/bootload.h
 [; ;mcc_generated_files/bootload.h: 32: uint8_t ProcessBootBuffer (void);
 [v _ProcessBootBuffer `(uc ~T0 @X0 0 ef ]
@@ -3182,9 +3178,6 @@ Version 4.0 HI-TECH Software Intermediate Code
 [; ;mcc_generated_files/pic18f_uart.c: 93:             }
 }
 [e :U 3227 ]
-"94
-[; ;mcc_generated_files/pic18f_uart.c: 94:             _delay((unsigned long)((5)*(16000000/4000.0)));
-[e ( __delay (1 -> * -> -> 5 `i `d / -> -> 16000000 `l `d .4000.0 `ul ]
 "95
 [; ;mcc_generated_files/pic18f_uart.c: 95:         }
 }
@@ -3200,9 +3193,6 @@ Version 4.0 HI-TECH Software Intermediate Code
 [e = . . _LATBbits 0 5 -> -> 0 `i `uc ]
 }
 [e :U 3231 ]
-"98
-[; ;mcc_generated_files/pic18f_uart.c: 98:         _delay((unsigned long)((10)*(16000000/4000.0)));
-[e ( __delay (1 -> * -> -> 10 `i `d / -> -> 16000000 `l `d .4000.0 `ul ]
 "100
 [; ;mcc_generated_files/pic18f_uart.c: 100:         msg_length = ProcessBootBuffer();
 [e = _msg_length ( _ProcessBootBuffer ..  ]
@@ -3227,9 +3217,6 @@ Version 4.0 HI-TECH Software Intermediate Code
 [; ;mcc_generated_files/pic18f_uart.c: 111:             }
 }
 [e :U 3236 ]
-"112
-[; ;mcc_generated_files/pic18f_uart.c: 112:             _delay((unsigned long)((10)*(16000000/4000.0)));
-[e ( __delay (1 -> * -> -> 10 `i `d / -> -> 16000000 `l `d .4000.0 `ul ]
 "113
 [; ;mcc_generated_files/pic18f_uart.c: 113:         }
 }
