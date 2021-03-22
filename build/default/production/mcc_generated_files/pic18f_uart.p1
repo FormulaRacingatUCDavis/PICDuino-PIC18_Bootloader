@@ -13,18 +13,7 @@ Version 4.0 HI-TECH Software Intermediate Code
 "375
 [; ;mcc_generated_files/uart1.h: 375: void UART1_Write(uint8_t txData);
 [v _UART1_Write `(v ~T0 @X0 0 ef1`uc ]
-"4334 D:/Program Files/Microchip/MPLABX/v5.45/packs/Microchip/PIC18F-K_DFP/1.4.87/xc8\pic\include\proc\pic18f26k83.h
-[s S3074 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
-[n S3074 . LATB0 LATB1 LATB2 LATB3 LATB4 LATB5 LATB6 LATB7 ]
-"4344
-[s S3075 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
-[n S3075 . LB0 LB1 LB2 LB3 LB4 LB5 LB6 LB7 ]
-"4333
-[u S3073 `S3074 1 `S3075 1 ]
-[n S3073 . . . ]
-"4355
-[v _LATBbits `VS3073 ~T0 @X0 0 e@16315 ]
-"47905
+"47905 D:/Program Files/Microchip/MPLABX/v5.45/packs/Microchip/PIC18F-K_DFP/1.4.87/xc8\pic\include\proc\pic18f26k83.h
 [; ;D:/Program Files/Microchip/MPLABX/v5.45/packs/Microchip/PIC18F-K_DFP/1.4.87/xc8\pic\include\proc\pic18f26k83.h: 47905:     struct {
 [s S2082 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
 [n S2082 . TXCIF RXFOIF RXBKIF FERIF CERIF ABDOVF PERIF TXMTIF ]
@@ -3108,20 +3097,13 @@ Version 4.0 HI-TECH Software Intermediate Code
 "68
 [; ;mcc_generated_files/pic18f_uart.c: 68:     {
 {
-"69
-[; ;mcc_generated_files/pic18f_uart.c: 69:         do { LATBbits.LATB5 = 1; } while(0);
-[e :U 3220 ]
-{
-[e = . . _LATBbits 0 5 -> -> 1 `i `uc ]
-}
-[e :U 3219 ]
 "70
 [; ;mcc_generated_files/pic18f_uart.c: 70:         while (U1ERRIRbits.TXMTIF == 0);
-[e $U 3221  ]
-[e :U 3222 ]
-[e :U 3221 ]
-[e $ == -> . . _U1ERRIRbits 0 7 `i -> 0 `i 3222  ]
-[e :U 3223 ]
+[e $U 3218  ]
+[e :U 3219 ]
+[e :U 3218 ]
+[e $ == -> . . _U1ERRIRbits 0 7 `i -> 0 `i 3219  ]
+[e :U 3220 ]
 "71
 [; ;mcc_generated_files/pic18f_uart.c: 71:         Check_Device_Reset();
 [e ( _Check_Device_Reset ..  ]
@@ -3136,14 +3118,14 @@ Version 4.0 HI-TECH Software Intermediate Code
 [v _ch `uc ~T0 @X0 1 a ]
 "79
 [; ;mcc_generated_files/pic18f_uart.c: 79:         while (index < msg_length)
-[e $U 3224  ]
-[e :U 3225 ]
+[e $U 3221  ]
+[e :U 3222 ]
 "80
 [; ;mcc_generated_files/pic18f_uart.c: 80:         {
 {
 "81
 [; ;mcc_generated_files/pic18f_uart.c: 81:             if(UART1_is_rx_ready()){
-[e $ ! != -> ( _UART1_is_rx_ready ..  `i -> 0 `i 3227  ]
+[e $ ! != -> ( _UART1_is_rx_ready ..  `i -> 0 `i 3224  ]
 {
 "82
 [; ;mcc_generated_files/pic18f_uart.c: 82:                 ch = UART1_Read();
@@ -3153,13 +3135,13 @@ Version 4.0 HI-TECH Software Intermediate Code
 [e = *U + &U . _frame 1 * -> ++ _index -> -> 1 `i `Vuc `ux -> -> # *U &U . _frame 1 `ui `ux _ch ]
 "84
 [; ;mcc_generated_files/pic18f_uart.c: 84:                 if (index == 4)
-[e $ ! == -> _index `i -> 4 `i 3228  ]
+[e $ ! == -> _index `i -> 4 `i 3225  ]
 "85
 [; ;mcc_generated_files/pic18f_uart.c: 85:                 {
 {
 "86
 [; ;mcc_generated_files/pic18f_uart.c: 86:                     if ((frame.command == 2)
-[e $ ! || || == -> . . _frame 0 0 `i -> 2 `i == -> . . _frame 0 0 `i -> 5 `i == -> . . _frame 0 0 `i -> 7 `i 3229  ]
+[e $ ! || || == -> . . _frame 0 0 `i -> 2 `i == -> . . _frame 0 0 `i -> 5 `i == -> . . _frame 0 0 `i -> 7 `i 3226  ]
 "89
 [; ;mcc_generated_files/pic18f_uart.c: 89:                     {
 {
@@ -3169,30 +3151,23 @@ Version 4.0 HI-TECH Software Intermediate Code
 "91
 [; ;mcc_generated_files/pic18f_uart.c: 91:                     }
 }
-[e :U 3229 ]
+[e :U 3226 ]
 "92
 [; ;mcc_generated_files/pic18f_uart.c: 92:                 }
 }
-[e :U 3228 ]
+[e :U 3225 ]
 "93
 [; ;mcc_generated_files/pic18f_uart.c: 93:             }
 }
-[e :U 3227 ]
+[e :U 3224 ]
 "95
 [; ;mcc_generated_files/pic18f_uart.c: 95:         }
 }
-[e :U 3224 ]
+[e :U 3221 ]
 "79
 [; ;mcc_generated_files/pic18f_uart.c: 79:         while (index < msg_length)
-[e $ < -> _index `i -> _msg_length `i 3225  ]
-[e :U 3226 ]
-"97
-[; ;mcc_generated_files/pic18f_uart.c: 97:         do { LATBbits.LATB5 = 0; } while(0);
-[e :U 3232 ]
-{
-[e = . . _LATBbits 0 5 -> -> 0 `i `uc ]
-}
-[e :U 3231 ]
+[e $ < -> _index `i -> _msg_length `i 3222  ]
+[e :U 3223 ]
 "100
 [; ;mcc_generated_files/pic18f_uart.c: 100:         msg_length = ProcessBootBuffer();
 [e = _msg_length ( _ProcessBootBuffer ..  ]
@@ -3201,14 +3176,14 @@ Version 4.0 HI-TECH Software Intermediate Code
 [e = _index -> -> 0 `i `uc ]
 "107
 [; ;mcc_generated_files/pic18f_uart.c: 107:         while (index < msg_length)
-[e $U 3233  ]
-[e :U 3234 ]
+[e $U 3227  ]
+[e :U 3228 ]
 "108
 [; ;mcc_generated_files/pic18f_uart.c: 108:         {
 {
 "109
 [; ;mcc_generated_files/pic18f_uart.c: 109:             if(UART1_is_tx_ready()){
-[e $ ! != -> ( _UART1_is_tx_ready ..  `i -> 0 `i 3236  ]
+[e $ ! != -> ( _UART1_is_tx_ready ..  `i -> 0 `i 3230  ]
 {
 "110
 [; ;mcc_generated_files/pic18f_uart.c: 110:                 UART1_Write(frame.buffer[index++]);
@@ -3216,15 +3191,15 @@ Version 4.0 HI-TECH Software Intermediate Code
 "111
 [; ;mcc_generated_files/pic18f_uart.c: 111:             }
 }
-[e :U 3236 ]
+[e :U 3230 ]
 "113
 [; ;mcc_generated_files/pic18f_uart.c: 113:         }
 }
-[e :U 3233 ]
+[e :U 3227 ]
 "107
 [; ;mcc_generated_files/pic18f_uart.c: 107:         while (index < msg_length)
-[e $ < -> _index `i -> _msg_length `i 3234  ]
-[e :U 3235 ]
+[e $ < -> _index `i -> _msg_length `i 3228  ]
+[e :U 3229 ]
 "115
 [; ;mcc_generated_files/pic18f_uart.c: 115:     }
 }

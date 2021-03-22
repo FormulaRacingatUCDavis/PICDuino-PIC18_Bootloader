@@ -66,7 +66,7 @@ void Run_Bootloader()
 
     while (1)
     {
-        IO_RB5_SetHigh();
+        //IO_RB5_SetHigh();
         while (U1ERRIRbits.TXMTIF == 0); // wait for last byte to shift out 
         Check_Device_Reset();  // Response has been sent.  Check to see if a reset was requested
 
@@ -94,7 +94,7 @@ void Run_Bootloader()
             //__delay_ms(2);
         }
         
-        IO_RB5_SetLow();
+        //IO_RB5_SetLow();
         //__delay_ms(5);
 
         msg_length = ProcessBootBuffer();

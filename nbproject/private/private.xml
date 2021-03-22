@@ -12,7 +12,11 @@
         </group>
         <group name="Picduino">
             <file>file:/D:/Users/leoja/MPLABXProjects/PIC18_Bootloader_Test5.X/mcc_generated_files/pic18f_uart.c</file>
+            <file>file:/D:/Users/leoja/MPLABXProjects/PIC18_Bootloader_Test5.X/mcc_generated_files/mcc.c</file>
+            <file>file:/D:/Users/leoja/MPLABXProjects/PIC18_Bootloader_Test5.X/mcc_generated_files/pin_manager.c</file>
             <file>file:/D:/Users/leoja/MPLABXProjects/PIC18_Bootloader_Test5.X/mcc_generated_files/pic18f_bootload.c</file>
+            <file>file:/D:/Users/leoja/MPLABXProjects/PIC18_Bootloader_Test5.X/mcc_generated_files/device_config.c</file>
+            <file>file:/D:/Users/leoja/MPLABXProjects/PIC18_Bootloader_Test5.X/main.c</file>
         </group>
     </open-files>
 </project-private>

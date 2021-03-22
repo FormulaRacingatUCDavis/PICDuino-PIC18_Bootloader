@@ -67,15 +67,7 @@ void main(void)
 
     while (1)
     {
-//        if(AutobaudComplete()){
-//            
-//            BOOTLOADER_Initialize();
-//            //break;
-//        }
-//        
-//        
-//        __delay_ms(5);
-//        // Add your application code
+    
     }
 }
 

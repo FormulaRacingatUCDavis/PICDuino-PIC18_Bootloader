@@ -93,27 +93,6 @@
 [v _LATA LATA `VEuc  1 e 1 @16314 ]
 "4328
 [v _LATB LATB `VEuc  1 e 1 @16315 ]
-[s S117 . 1 `uc 1 LATB0 1 0 :1:0 
-`uc 1 LATB1 1 0 :1:1 
-`uc 1 LATB2 1 0 :1:2 
-`uc 1 LATB3 1 0 :1:3 
-`uc 1 LATB4 1 0 :1:4 
-`uc 1 LATB5 1 0 :1:5 
-`uc 1 LATB6 1 0 :1:6 
-`uc 1 LATB7 1 0 :1:7 
-]
-"4355
-[s S126 . 1 `uc 1 LB0 1 0 :1:0 
-`uc 1 LB1 1 0 :1:1 
-`uc 1 LB2 1 0 :1:2 
-`uc 1 LB3 1 0 :1:3 
-`uc 1 LB4 1 0 :1:4 
-`uc 1 LB5 1 0 :1:5 
-`uc 1 LB6 1 0 :1:6 
-`uc 1 LB7 1 0 :1:7 
-]
-[u S135 . 1 `S117 1 . 1 0 `S126 1 . 1 0 ]
-[v _LATBbits LATBbits `VES135  1 e 1 @16315 ]
 "4440
 [v _LATC LATC `VEuc  1 e 1 @16316 ]
 "4552
@@ -122,7 +101,7 @@
 [v _TRISB TRISB `VEuc  1 e 1 @16323 ]
 "4676
 [v _TRISC TRISC `VEuc  1 e 1 @16324 ]
-[s S419 . 1 `uc 1 INT0EDG 1 0 :1:0 
+[s S349 . 1 `uc 1 INT0EDG 1 0 :1:0 
 `uc 1 INT1EDG 1 0 :1:1 
 `uc 1 INT2EDG 1 0 :1:2 
 `uc 1 . 1 0 :2:3 
@@ -131,11 +110,11 @@
 `uc 1 GIE 1 0 :1:7 
 ]
 "5038
-[s S427 . 1 `uc 1 . 1 0 :7:0 
+[s S357 . 1 `uc 1 . 1 0 :7:0 
 `uc 1 GIEH 1 0 :1:7 
 ]
-[u S430 . 1 `S419 1 . 1 0 `S427 1 . 1 0 ]
-[v _INTCON0bits INTCON0bits `VES430  1 e 1 @16338 ]
+[u S360 . 1 `S349 1 . 1 0 `S357 1 . 1 0 ]
+[v _INTCON0bits INTCON0bits `VES360  1 e 1 @16338 ]
 "5574
 [v _BSR BSR `VEuc  1 e 1 @16352 ]
 "6165
@@ -150,7 +129,7 @@
 [v _TBLPTRU TBLPTRU `VEuc  1 e 1 @16376 ]
 "6332
 [v _STKPTR STKPTR `VEuc  1 e 1 @16380 ]
-[s S455 . 1 `uc 1 SWIF 1 0 :1:0 
+[s S385 . 1 `uc 1 SWIF 1 0 :1:0 
 `uc 1 HLVDIF 1 0 :1:1 
 `uc 1 OSFIF 1 0 :1:2 
 `uc 1 CSWIF 1 0 :1:3 
@@ -160,9 +139,9 @@
 `uc 1 IOCIF 1 0 :1:7 
 ]
 "25896
-[u S464 . 1 `S455 1 . 1 0 ]
-[v _PIR0bits PIR0bits `VES464  1 e 1 @14752 ]
-[s S611 . 1 `uc 1 I2C1TXIF 1 0 :1:0 
+[u S394 . 1 `S385 1 . 1 0 ]
+[v _PIR0bits PIR0bits `VES394  1 e 1 @14752 ]
+[s S541 . 1 `uc 1 I2C1TXIF 1 0 :1:0 
 `uc 1 I2C1IF 1 0 :1:1 
 `uc 1 I2C1EIF 1 0 :1:2 
 `uc 1 U1RXIF 1 0 :1:3 
@@ -172,13 +151,13 @@
 `uc 1 TMR0IF 1 0 :1:7 
 ]
 "26128
-[s S620 . 1 `uc 1 . 1 0 :1:0 
+[s S550 . 1 `uc 1 . 1 0 :1:0 
 `uc 1 RXBNIF 1 0 :1:1 
 `uc 1 . 1 0 :2:2 
 `uc 1 TXBNIF 1 0 :1:4 
 ]
-[u S625 . 1 `S611 1 . 1 0 `S620 1 . 1 0 ]
-[v _PIR3bits PIR3bits `VES625  1 e 1 @14755 ]
+[u S555 . 1 `S541 1 . 1 0 `S550 1 . 1 0 ]
+[v _PIR3bits PIR3bits `VES555  1 e 1 @14755 ]
 "26578
 [v _PMD0 PMD0 `VEuc  1 e 1 @14784 ]
 "26655
@@ -213,7 +192,7 @@
 [v _NVMDAT NVMDAT `VEuc  1 e 1 @14819 ]
 "27951
 [v _NVMCON1 NVMCON1 `VEuc  1 e 1 @14821 ]
-[s S365 . 1 `uc 1 RD 1 0 :1:0 
+[s S295 . 1 `uc 1 RD 1 0 :1:0 
 `uc 1 WR 1 0 :1:1 
 `uc 1 WREN 1 0 :1:2 
 `uc 1 WRERR 1 0 :1:3 
@@ -222,19 +201,19 @@
 `uc 1 REG 1 0 :2:6 
 ]
 "27981
-[s S373 . 1 `uc 1 . 1 0 :6:0 
+[s S303 . 1 `uc 1 . 1 0 :6:0 
 `uc 1 REG0 1 0 :1:6 
 `uc 1 REG1 1 0 :1:7 
 ]
-[s S377 . 1 `uc 1 . 1 0 :6:0 
+[s S307 . 1 `uc 1 . 1 0 :6:0 
 `uc 1 NVMREG 1 0 :2:6 
 ]
-[s S380 . 1 `uc 1 . 1 0 :6:0 
+[s S310 . 1 `uc 1 . 1 0 :6:0 
 `uc 1 NVMREG0 1 0 :1:6 
 `uc 1 NVMREG1 1 0 :1:7 
 ]
-[u S384 . 1 `S365 1 . 1 0 `S373 1 . 1 0 `S377 1 . 1 0 `S380 1 . 1 0 ]
-[v _NVMCON1bits NVMCON1bits `VES384  1 e 1 @14821 ]
+[u S314 . 1 `S295 1 . 1 0 `S303 1 . 1 0 `S307 1 . 1 0 `S310 1 . 1 0 ]
+[v _NVMCON1bits NVMCON1bits `VES314  1 e 1 @14821 ]
 "28041
 [v _NVMCON2 NVMCON2 `VEuc  1 e 1 @14822 ]
 "29521
@@ -293,34 +272,34 @@
 [v _U1P3H U1P3H `VEuc  1 e 1 @15857 ]
 "47328
 [v _U1CON0 U1CON0 `VEuc  1 e 1 @15858 ]
-[s S643 . 1 `uc 1 MODE0 1 0 :1:0 
+[s S573 . 1 `uc 1 MODE0 1 0 :1:0 
 `uc 1 MODE1 1 0 :1:1 
 `uc 1 MODE2 1 0 :1:2 
 ]
 "47359
-[s S647 . 1 `uc 1 U1MODE 1 0 :4:0 
+[s S577 . 1 `uc 1 U1MODE 1 0 :4:0 
 `uc 1 U1RXEN 1 0 :1:4 
 `uc 1 U1TXEN 1 0 :1:5 
 `uc 1 U1ABDEN 1 0 :1:6 
 `uc 1 U1BRGS 1 0 :1:7 
 ]
 "47359
-[s S653 . 1 `uc 1 U1MODE0 1 0 :1:0 
+[s S583 . 1 `uc 1 U1MODE0 1 0 :1:0 
 `uc 1 U1MODE1 1 0 :1:1 
 `uc 1 U1MODE2 1 0 :1:2 
 ]
 "47359
-[s S657 . 1 `uc 1 MODE 1 0 :4:0 
+[s S587 . 1 `uc 1 MODE 1 0 :4:0 
 `uc 1 RXEN 1 0 :1:4 
 `uc 1 TXEN 1 0 :1:5 
 `uc 1 ABDEN 1 0 :1:6 
 `uc 1 BRGS 1 0 :1:7 
 ]
 "47359
-[u S663 . 1 `S643 1 . 1 0 `S647 1 . 1 0 `S653 1 . 1 0 `S657 1 . 1 0 ]
+[u S593 . 1 `S573 1 . 1 0 `S577 1 . 1 0 `S583 1 . 1 0 `S587 1 . 1 0 ]
 "47359
 "47359
-[v _U1CON0bits U1CON0bits `VES663  1 e 1 @15858 ]
+[v _U1CON0bits U1CON0bits `VES593  1 e 1 @15858 ]
 "47444
 [v _U1CON1 U1CON1 `VEuc  1 e 1 @15859 ]
 "47524
@@ -353,7 +332,7 @@
 [v _U1UIRbits U1UIRbits `VES95  1 e 1 @15864 ]
 "47899
 [v _U1ERRIR U1ERRIR `VEuc  1 e 1 @15865 ]
-[s S300 . 1 `uc 1 TXCIF 1 0 :1:0 
+[s S230 . 1 `uc 1 TXCIF 1 0 :1:0 
 `uc 1 RXFOIF 1 0 :1:1 
 `uc 1 RXBKIF 1 0 :1:2 
 `uc 1 FERIF 1 0 :1:3 
@@ -363,7 +342,7 @@
 `uc 1 TXMTIF 1 0 :1:7 
 ]
 "47926
-[s S309 . 1 `uc 1 U1TXCIF 1 0 :1:0 
+[s S239 . 1 `uc 1 U1TXCIF 1 0 :1:0 
 `uc 1 U1RXFOIF 1 0 :1:1 
 `uc 1 U1RXBKIF 1 0 :1:2 
 `uc 1 U1FERIF 1 0 :1:3 
@@ -373,10 +352,10 @@
 `uc 1 U1TXMTIF 1 0 :1:7 
 ]
 "47926
-[u S318 . 1 `S300 1 . 1 0 `S309 1 . 1 0 ]
+[u S248 . 1 `S230 1 . 1 0 `S239 1 . 1 0 ]
 "47926
 "47926
-[v _U1ERRIRbits U1ERRIRbits `VES318  1 e 1 @15865 ]
+[v _U1ERRIRbits U1ERRIRbits `VES248  1 e 1 @15865 ]
 "48011
 [v _U1ERRIE U1ERRIE `VEuc  1 e 1 @15866 ]
 "106 D:\Users\leoja\MPLABXProjects\PIC18_Bootloader_Test5.X\mcc_generated_files/pic18f_bootload.c
@@ -391,14 +370,14 @@
 "47 D:\Users\leoja\MPLABXProjects\PIC18_Bootloader_Test5.X\mcc_generated_files/pic18f_uart.c
 [u S70 . 137 `S60 1 . 137 0 `[137]uc 1 buffer 137 0 ]
 [v _frame frame `S70  1 e 137 0 ]
-[s S555 . 1 `uc 1 perr 1 0 :1:0 
+[s S485 . 1 `uc 1 perr 1 0 :1:0 
 `uc 1 ferr 1 0 :1:1 
 `uc 1 oerr 1 0 :1:2 
 `uc 1 reserved 1 0 :5:3 
 ]
 "53 D:\Users\leoja\MPLABXProjects\PIC18_Bootloader_Test5.X\mcc_generated_files/uart1.c
-[u S560 . 1 `S555 1 . 1 0 `uc 1 status 1 0 ]
-[v _uart1RxLastError uart1RxLastError `VES560  1 s 1 uart1RxLastError ]
+[u S490 . 1 `S485 1 . 1 0 `uc 1 status 1 0 ]
+[v _uart1RxLastError uart1RxLastError `VES490  1 s 1 uart1RxLastError ]
 "58
 [v _UART1_FramingErrorHandler UART1_FramingErrorHandler `*.37(v  1 e 2 0 ]
 "59
@@ -408,7 +387,7 @@
 "53 D:\Users\leoja\MPLABXProjects\PIC18_Bootloader_Test5.X\main.c
 [v _main main `(v  1 e 1 0 ]
 {
-"80
+"72
 } 0
 "50 D:\Users\leoja\MPLABXProjects\PIC18_Bootloader_Test5.X\mcc_generated_files/mcc.c
 [v _SYSTEM_Initialize SYSTEM_Initialize `(v  1 e 1 0 ]
@@ -570,6 +549,6 @@
 [v _Bootload_Required Bootload_Required `(a  1 e 1 0 ]
 {
 "149
-[v Bootload_Required@i i `uc  1 a 1 2 ]
+[v Bootload_Required@i i `uc  1 a 1 1 ]
 "163
 } 0

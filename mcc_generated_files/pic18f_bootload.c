@@ -155,9 +155,9 @@ bool Bootload_Required ()
         __delay_ms(10);
     }
     
-    IO_RB5_SetHigh();
-    __delay_ms(200);
-    IO_RB5_SetLow();
+    //IO_RB5_SetHigh();
+    //__delay_ms(200);
+    //IO_RB5_SetLow();
     
     return false;                      //otherwise, do not run bootloader
 }

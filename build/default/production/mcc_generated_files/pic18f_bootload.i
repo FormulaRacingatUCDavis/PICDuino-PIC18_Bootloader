@@ -36495,9 +36495,9 @@ typedef union
 # 50 "mcc_generated_files/mcc.h" 2
 
 # 1 "mcc_generated_files/pin_manager.h" 1
-# 122 "mcc_generated_files/pin_manager.h"
+# 102 "mcc_generated_files/pin_manager.h"
 void PIN_MANAGER_Initialize (void);
-# 134 "mcc_generated_files/pin_manager.h"
+# 114 "mcc_generated_files/pin_manager.h"
 void PIN_MANAGER_IOC(void);
 # 51 "mcc_generated_files/mcc.h" 2
 
@@ -36636,9 +36636,9 @@ _Bool Bootload_Required ()
         _delay((unsigned long)((10)*(16000000/4000.0)));
     }
 
-    do { LATBbits.LATB5 = 1; } while(0);
-    _delay((unsigned long)((200)*(16000000/4000.0)));
-    do { LATBbits.LATB5 = 0; } while(0);
+
+
+
 
     return 0;
 }

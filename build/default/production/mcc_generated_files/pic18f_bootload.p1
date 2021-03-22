@@ -36,17 +36,6 @@ Version 4.0 HI-TECH Software Intermediate Code
 "203 D:/Program Files/Microchip/MPLABX/v5.45/packs/Microchip/PIC18F-K_DFP/1.4.87/xc8\pic\include\pic18.h
 [v __delay `JF22555 ~T0 @X0 0 e ]
 [p i __delay ]
-"4334 D:/Program Files/Microchip/MPLABX/v5.45/packs/Microchip/PIC18F-K_DFP/1.4.87/xc8\pic\include\proc\pic18f26k83.h
-[s S3074 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
-[n S3074 . LATB0 LATB1 LATB2 LATB3 LATB4 LATB5 LATB6 LATB7 ]
-"4344
-[s S3075 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
-[n S3075 . LB0 LB1 LB2 LB3 LB4 LB5 LB6 LB7 ]
-"4333
-[u S3073 `S3074 1 `S3075 1 ]
-[n S3073 . . . ]
-"4355
-[v _LATBbits `VS3073 ~T0 @X0 0 e@16315 ]
 "73 mcc_generated_files/pic18f_bootload.c
 [; ;mcc_generated_files/pic18f_bootload.c: 73: uint8_t Get_Version_Data(void);
 [v _Get_Version_Data `(uc ~T0 @X0 0 ef ]
@@ -3228,23 +3217,6 @@ Version 4.0 HI-TECH Software Intermediate Code
 [e $ < -> _i `i -> 100 `i 3214  ]
 [e :U 3215 ]
 }
-"158
-[; ;mcc_generated_files/pic18f_bootload.c: 158:     do { LATBbits.LATB5 = 1; } while(0);
-[e :U 3220 ]
-{
-[e = . . _LATBbits 0 5 -> -> 1 `i `uc ]
-}
-[e :U 3219 ]
-"159
-[; ;mcc_generated_files/pic18f_bootload.c: 159:     _delay((unsigned long)((200)*(16000000/4000.0)));
-[e ( __delay (1 -> * -> -> 200 `i `d / -> -> 16000000 `l `d .4000.0 `ul ]
-"160
-[; ;mcc_generated_files/pic18f_bootload.c: 160:     do { LATBbits.LATB5 = 0; } while(0);
-[e :U 3223 ]
-{
-[e = . . _LATBbits 0 5 -> -> 0 `i `uc ]
-}
-[e :U 3222 ]
 "162
 [; ;mcc_generated_files/pic18f_bootload.c: 162:     return 0;
 [e ) -> -> 0 `i `a ]
@@ -3272,67 +3244,67 @@ Version 4.0 HI-TECH Software Intermediate Code
 [e = _EE_Key_2 . . _frame 0 3 ]
 "193
 [; ;mcc_generated_files/pic18f_bootload.c: 193:     switch (frame.command)
-[e $U 3226  ]
+[e $U 3220  ]
 "194
 [; ;mcc_generated_files/pic18f_bootload.c: 194:     {
 {
 "195
 [; ;mcc_generated_files/pic18f_bootload.c: 195:     case 0:
-[e :U 3227 ]
+[e :U 3221 ]
 "196
 [; ;mcc_generated_files/pic18f_bootload.c: 196:         len = Get_Version_Data();
 [e = _len ( _Get_Version_Data ..  ]
 "197
 [; ;mcc_generated_files/pic18f_bootload.c: 197:         break;
-[e $U 3225  ]
+[e $U 3219  ]
 "198
 [; ;mcc_generated_files/pic18f_bootload.c: 198:     case 2:
-[e :U 3228 ]
+[e :U 3222 ]
 "199
 [; ;mcc_generated_files/pic18f_bootload.c: 199:         len = Write_Flash();
 [e = _len ( _Write_Flash ..  ]
 "200
 [; ;mcc_generated_files/pic18f_bootload.c: 200:         break;
-[e $U 3225  ]
+[e $U 3219  ]
 "201
 [; ;mcc_generated_files/pic18f_bootload.c: 201:     case 3:
-[e :U 3229 ]
+[e :U 3223 ]
 "202
 [; ;mcc_generated_files/pic18f_bootload.c: 202:         len = Erase_Flash();
 [e = _len ( _Erase_Flash ..  ]
 "203
 [; ;mcc_generated_files/pic18f_bootload.c: 203:         break;
-[e $U 3225  ]
+[e $U 3219  ]
 "204
 [; ;mcc_generated_files/pic18f_bootload.c: 204:     case 6:
-[e :U 3230 ]
+[e :U 3224 ]
 "205
 [; ;mcc_generated_files/pic18f_bootload.c: 205:         len = Read_Config();
 [e = _len ( _Read_Config ..  ]
 "206
 [; ;mcc_generated_files/pic18f_bootload.c: 206:         break;
-[e $U 3225  ]
+[e $U 3219  ]
 "207
 [; ;mcc_generated_files/pic18f_bootload.c: 207:     case 7:
-[e :U 3231 ]
+[e :U 3225 ]
 "208
 [; ;mcc_generated_files/pic18f_bootload.c: 208:         len = Write_Config();
 [e = _len ( _Write_Config ..  ]
 "209
 [; ;mcc_generated_files/pic18f_bootload.c: 209:         break;
-[e $U 3225  ]
+[e $U 3219  ]
 "210
 [; ;mcc_generated_files/pic18f_bootload.c: 210:     case 8:
-[e :U 3232 ]
+[e :U 3226 ]
 "211
 [; ;mcc_generated_files/pic18f_bootload.c: 211:         len = Calc_Checksum();
 [e = _len ( _Calc_Checksum ..  ]
 "212
 [; ;mcc_generated_files/pic18f_bootload.c: 212:         break;
-[e $U 3225  ]
+[e $U 3219  ]
 "213
 [; ;mcc_generated_files/pic18f_bootload.c: 213:     case 9:
-[e :U 3233 ]
+[e :U 3227 ]
 "214
 [; ;mcc_generated_files/pic18f_bootload.c: 214:         frame.data[0] = 0x01;
 [e = *U + &U . . _frame 0 8 * -> -> -> 0 `i `ui `ux -> -> # *U &U . . _frame 0 8 `ui `ux -> -> 1 `i `uc ]
@@ -3344,10 +3316,10 @@ Version 4.0 HI-TECH Software Intermediate Code
 [e = _len -> -> 9 `i `uc ]
 "217
 [; ;mcc_generated_files/pic18f_bootload.c: 217:         break;
-[e $U 3225  ]
+[e $U 3219  ]
 "218
 [; ;mcc_generated_files/pic18f_bootload.c: 218:     default:
-[e :U 3234 ]
+[e :U 3228 ]
 "219
 [; ;mcc_generated_files/pic18f_bootload.c: 219:         frame.data[0] = 0xFF;
 [e = *U + &U . . _frame 0 8 * -> -> -> 0 `i `ui `ux -> -> # *U &U . . _frame 0 8 `ui `ux -> -> 255 `i `uc ]
@@ -3357,24 +3329,24 @@ Version 4.0 HI-TECH Software Intermediate Code
 "221
 [; ;mcc_generated_files/pic18f_bootload.c: 221:     }
 }
-[e $U 3225  ]
-[e :U 3226 ]
-[e [\ -> . . _frame 0 0 `i , $ -> 0 `i 3227
- , $ -> 2 `i 3228
- , $ -> 3 `i 3229
- , $ -> 6 `i 3230
- , $ -> 7 `i 3231
- , $ -> 8 `i 3232
- , $ -> 9 `i 3233
- 3234 ]
-[e :U 3225 ]
+[e $U 3219  ]
+[e :U 3220 ]
+[e [\ -> . . _frame 0 0 `i , $ -> 0 `i 3221
+ , $ -> 2 `i 3222
+ , $ -> 3 `i 3223
+ , $ -> 6 `i 3224
+ , $ -> 7 `i 3225
+ , $ -> 8 `i 3226
+ , $ -> 9 `i 3227
+ 3228 ]
+[e :U 3219 ]
 "222
 [; ;mcc_generated_files/pic18f_bootload.c: 222:     return (len);
 [e ) _len ]
-[e $UE 3224  ]
+[e $UE 3218  ]
 "223
 [; ;mcc_generated_files/pic18f_bootload.c: 223: }
-[e :UE 3224 ]
+[e :UE 3218 ]
 }
 "232
 [; ;mcc_generated_files/pic18f_bootload.c: 232: uint8_t Get_Version_Data()
@@ -3452,9 +3424,9 @@ Version 4.0 HI-TECH Software Intermediate Code
 {
 [v _i `uc ~T0 @X0 1 a ]
 [e = _i -> -> 12 `i `uc ]
-[e $ < -> _i `i -> 16 `i 3236  ]
-[e $U 3237  ]
-[e :U 3236 ]
+[e $ < -> _i `i -> 16 `i 3230  ]
+[e $U 3231  ]
+[e :U 3230 ]
 "259
 [; ;mcc_generated_files/pic18f_bootload.c: 259:     {
 {
@@ -3468,16 +3440,16 @@ Version 4.0 HI-TECH Software Intermediate Code
 [; ;mcc_generated_files/pic18f_bootload.c: 262:     }
 }
 [e ++ _i -> -> 1 `i `uc ]
-[e $ < -> _i `i -> 16 `i 3236  ]
-[e :U 3237 ]
+[e $ < -> _i `i -> 16 `i 3230  ]
+[e :U 3231 ]
 }
 "264
 [; ;mcc_generated_files/pic18f_bootload.c: 264:     return 25;
 [e ) -> -> 25 `i `uc ]
-[e $UE 3235  ]
+[e $UE 3229  ]
 "265
 [; ;mcc_generated_files/pic18f_bootload.c: 265: }
-[e :UE 3235 ]
+[e :UE 3229 ]
 }
 "275
 [; ;mcc_generated_files/pic18f_bootload.c: 275: uint8_t Write_Flash()
@@ -3504,8 +3476,8 @@ Version 4.0 HI-TECH Software Intermediate Code
 {
 [v _i `us ~T0 @X0 1 a ]
 [e = _i -> -> 0 `i `us ]
-[e $U 3243  ]
-[e :U 3240 ]
+[e $U 3237  ]
+[e :U 3234 ]
 "282
 [; ;mcc_generated_files/pic18f_bootload.c: 282:     {
 {
@@ -3514,7 +3486,7 @@ Version 4.0 HI-TECH Software Intermediate Code
 [e = _TABLAT *U + &U . . _frame 0 8 * -> _i `ux -> -> # *U &U . . _frame 0 8 `ui `ux ]
 "284
 [; ;mcc_generated_files/pic18f_bootload.c: 284:         if (TBLPTR >= 0x010000)
-[e $ ! >= -> _TBLPTR `l -> 65536 `l 3244  ]
+[e $ ! >= -> _TBLPTR `l -> 65536 `l 3238  ]
 "285
 [; ;mcc_generated_files/pic18f_bootload.c: 285:         {
 {
@@ -3524,17 +3496,17 @@ Version 4.0 HI-TECH Software Intermediate Code
 "287
 [; ;mcc_generated_files/pic18f_bootload.c: 287:             return (10);
 [e ) -> -> 10 `i `uc ]
-[e $UE 3239  ]
+[e $UE 3233  ]
 "288
 [; ;mcc_generated_files/pic18f_bootload.c: 288:         }
 }
-[e :U 3244 ]
+[e :U 3238 ]
 "289
 [; ;mcc_generated_files/pic18f_bootload.c: 289:         __asm("TBLWT *+");
 [; <" TBLWT *+ ;# ">
 "290
 [; ;mcc_generated_files/pic18f_bootload.c: 290:         if (((TBLPTRL & (128 - 1)) == 0x00)
-[e $ ! || == & -> _TBLPTRL `i - -> 128 `i -> 1 `i -> 0 `i == -> _i `ui - -> . . _frame 0 1 `ui -> -> 1 `i `ui 3245  ]
+[e $ ! || == & -> _TBLPTRL `i - -> 128 `i -> 1 `i -> 0 `i == -> _i `ui - -> . . _frame 0 1 `ui -> -> 1 `i `ui 3239  ]
 "292
 [; ;mcc_generated_files/pic18f_bootload.c: 292:         {
 {
@@ -3550,14 +3522,14 @@ Version 4.0 HI-TECH Software Intermediate Code
 "296
 [; ;mcc_generated_files/pic18f_bootload.c: 296:         }
 }
-[e :U 3245 ]
+[e :U 3239 ]
 "297
 [; ;mcc_generated_files/pic18f_bootload.c: 297:     }
 }
 [e ++ _i -> -> 1 `i `us ]
-[e :U 3243 ]
-[e $ < -> _i `ui -> . . _frame 0 1 `ui 3240  ]
-[e :U 3241 ]
+[e :U 3237 ]
+[e $ < -> _i `ui -> . . _frame 0 1 `ui 3234  ]
+[e :U 3235 ]
 }
 "298
 [; ;mcc_generated_files/pic18f_bootload.c: 298:     frame.data[0] = 0x01;
@@ -3571,10 +3543,10 @@ Version 4.0 HI-TECH Software Intermediate Code
 "301
 [; ;mcc_generated_files/pic18f_bootload.c: 301:     return (10);
 [e ) -> -> 10 `i `uc ]
-[e $UE 3239  ]
+[e $UE 3233  ]
 "302
 [; ;mcc_generated_files/pic18f_bootload.c: 302: }
-[e :UE 3239 ]
+[e :UE 3233 ]
 }
 "311
 [; ;mcc_generated_files/pic18f_bootload.c: 311: uint8_t Erase_Flash ()
@@ -3598,14 +3570,14 @@ Version 4.0 HI-TECH Software Intermediate Code
 {
 [v _i `us ~T0 @X0 1 a ]
 [e = _i -> -> 0 `i `us ]
-[e $U 3250  ]
-[e :U 3247 ]
+[e $U 3244  ]
+[e :U 3241 ]
 "317
 [; ;mcc_generated_files/pic18f_bootload.c: 317:     {
 {
 "318
 [; ;mcc_generated_files/pic18f_bootload.c: 318:         if (TBLPTR >= 0x010000)
-[e $ ! >= -> _TBLPTR `l -> 65536 `l 3251  ]
+[e $ ! >= -> _TBLPTR `l -> 65536 `l 3245  ]
 "319
 [; ;mcc_generated_files/pic18f_bootload.c: 319:         {
 {
@@ -3615,11 +3587,11 @@ Version 4.0 HI-TECH Software Intermediate Code
 "321
 [; ;mcc_generated_files/pic18f_bootload.c: 321:             return (10);
 [e ) -> -> 10 `i `uc ]
-[e $UE 3246  ]
+[e $UE 3240  ]
 "322
 [; ;mcc_generated_files/pic18f_bootload.c: 322:         }
 }
-[e :U 3251 ]
+[e :U 3245 ]
 "323
 [; ;mcc_generated_files/pic18f_bootload.c: 323:         NVMCON1 = 0x94;
 [e = _NVMCON1 -> -> 148 `i `uc ]
@@ -3633,9 +3605,9 @@ Version 4.0 HI-TECH Software Intermediate Code
 [; ;mcc_generated_files/pic18f_bootload.c: 326:     }
 }
 [e ++ _i -> -> 1 `i `us ]
-[e :U 3250 ]
-[e $ < -> _i `ui -> . . _frame 0 1 `ui 3247  ]
-[e :U 3248 ]
+[e :U 3244 ]
+[e $ < -> _i `ui -> . . _frame 0 1 `ui 3241  ]
+[e :U 3242 ]
 }
 "327
 [; ;mcc_generated_files/pic18f_bootload.c: 327:     frame.data[0] = 0x01;
@@ -3649,10 +3621,10 @@ Version 4.0 HI-TECH Software Intermediate Code
 "330
 [; ;mcc_generated_files/pic18f_bootload.c: 330:     return (10);
 [e ) -> -> 10 `i `uc ]
-[e $UE 3246  ]
+[e $UE 3240  ]
 "331
 [; ;mcc_generated_files/pic18f_bootload.c: 331: }
-[e :UE 3246 ]
+[e :UE 3240 ]
 }
 "340
 [; ;mcc_generated_files/pic18f_bootload.c: 340: uint8_t Read_Config ()
@@ -3679,8 +3651,8 @@ Version 4.0 HI-TECH Software Intermediate Code
 {
 [v _i `uc ~T0 @X0 1 a ]
 [e = _i -> -> 0 `i `uc ]
-[e $U 3256  ]
-[e :U 3253 ]
+[e $U 3250  ]
+[e :U 3247 ]
 "347
 [; ;mcc_generated_files/pic18f_bootload.c: 347:     {
 {
@@ -3694,17 +3666,17 @@ Version 4.0 HI-TECH Software Intermediate Code
 [; ;mcc_generated_files/pic18f_bootload.c: 350:     }
 }
 [e ++ _i -> -> 1 `i `uc ]
-[e :U 3256 ]
-[e $ < -> _i `ui -> . . _frame 0 1 `ui 3253  ]
-[e :U 3254 ]
+[e :U 3250 ]
+[e $ < -> _i `ui -> . . _frame 0 1 `ui 3247  ]
+[e :U 3248 ]
 }
 "351
 [; ;mcc_generated_files/pic18f_bootload.c: 351:     return (9 + frame.data_length);
 [e ) -> + -> -> 9 `i `ui -> . . _frame 0 1 `ui `uc ]
-[e $UE 3252  ]
+[e $UE 3246  ]
 "352
 [; ;mcc_generated_files/pic18f_bootload.c: 352: }
-[e :UE 3252 ]
+[e :UE 3246 ]
 }
 "360
 [; ;mcc_generated_files/pic18f_bootload.c: 360: uint8_t Write_Config ()
@@ -3725,25 +3697,25 @@ Version 4.0 HI-TECH Software Intermediate Code
 [e = _TBLPTRU . . _frame 0 6 ]
 "365
 [; ;mcc_generated_files/pic18f_bootload.c: 365:     if (TBLPTR > 0x20000F)
-[e $ ! > -> _TBLPTR `l -> 2097167 `l 3258  ]
+[e $ ! > -> _TBLPTR `l -> 2097167 `l 3252  ]
 "366
 [; ;mcc_generated_files/pic18f_bootload.c: 366:         NVMCON1 = 0xC4;
 [e = _NVMCON1 -> -> 196 `i `uc ]
-[e $U 3259  ]
+[e $U 3253  ]
 "367
 [; ;mcc_generated_files/pic18f_bootload.c: 367:     else
-[e :U 3258 ]
+[e :U 3252 ]
 "368
 [; ;mcc_generated_files/pic18f_bootload.c: 368:         NVMCON1 = 0x84;
 [e = _NVMCON1 -> -> 132 `i `uc ]
-[e :U 3259 ]
+[e :U 3253 ]
 "369
 [; ;mcc_generated_files/pic18f_bootload.c: 369:     for (uint8_t i= 0; i < frame.data_length; i ++)
 {
 [v _i `uc ~T0 @X0 1 a ]
 [e = _i -> -> 0 `i `uc ]
-[e $U 3263  ]
-[e :U 3260 ]
+[e $U 3257  ]
+[e :U 3254 ]
 "370
 [; ;mcc_generated_files/pic18f_bootload.c: 370:     {
 {
@@ -3763,9 +3735,9 @@ Version 4.0 HI-TECH Software Intermediate Code
 [; ;mcc_generated_files/pic18f_bootload.c: 375:     }
 }
 [e ++ _i -> -> 1 `i `uc ]
-[e :U 3263 ]
-[e $ < -> _i `ui -> . . _frame 0 1 `ui 3260  ]
-[e :U 3261 ]
+[e :U 3257 ]
+[e $ < -> _i `ui -> . . _frame 0 1 `ui 3254  ]
+[e :U 3255 ]
 }
 "376
 [; ;mcc_generated_files/pic18f_bootload.c: 376:     frame.data[0] = 0x01;
@@ -3779,10 +3751,10 @@ Version 4.0 HI-TECH Software Intermediate Code
 "379
 [; ;mcc_generated_files/pic18f_bootload.c: 379:     return (10);
 [e ) -> -> 10 `i `uc ]
-[e $UE 3257  ]
+[e $UE 3251  ]
 "380
 [; ;mcc_generated_files/pic18f_bootload.c: 380: }
-[e :UE 3257 ]
+[e :UE 3251 ]
 }
 "390
 [; ;mcc_generated_files/pic18f_bootload.c: 390: uint8_t Calc_Checksum()
@@ -3820,8 +3792,8 @@ Version 4.0 HI-TECH Software Intermediate Code
 [; ;mcc_generated_files/pic18f_bootload.c: 408:     for (i = 0; i < length; i ++)
 {
 [e = _i -> -> 0 `i `us ]
-[e $U 3268  ]
-[e :U 3265 ]
+[e $U 3262  ]
+[e :U 3259 ]
 "409
 [; ;mcc_generated_files/pic18f_bootload.c: 409:     {
 {
@@ -3835,9 +3807,9 @@ Version 4.0 HI-TECH Software Intermediate Code
 [; ;mcc_generated_files/pic18f_bootload.c: 412:      }
 }
 [e ++ _i -> -> 1 `i `us ]
-[e :U 3268 ]
-[e $ < -> _i `ui -> _length `ui 3265  ]
-[e :U 3266 ]
+[e :U 3262 ]
+[e $ < -> _i `ui -> _length `ui 3259  ]
+[e :U 3260 ]
 }
 "413
 [; ;mcc_generated_files/pic18f_bootload.c: 413:      frame.data[0] = (uint8_t) (check_sum & 0x00FF);
@@ -3848,10 +3820,10 @@ Version 4.0 HI-TECH Software Intermediate Code
 "415
 [; ;mcc_generated_files/pic18f_bootload.c: 415:      return (11);
 [e ) -> -> 11 `i `uc ]
-[e $UE 3264  ]
+[e $UE 3258  ]
 "416
 [; ;mcc_generated_files/pic18f_bootload.c: 416: }
-[e :UE 3264 ]
+[e :UE 3258 ]
 }
 "424
 [; ;mcc_generated_files/pic18f_bootload.c: 424: void StartWrite()
@@ -3887,10 +3859,10 @@ Version 4.0 HI-TECH Software Intermediate Code
 [e ( ___nop ..  ]
 "434
 [; ;mcc_generated_files/pic18f_bootload.c: 434:     return;
-[e $UE 3269  ]
+[e $UE 3263  ]
 "435
 [; ;mcc_generated_files/pic18f_bootload.c: 435: }
-[e :UE 3269 ]
+[e :UE 3263 ]
 }
 "442
 [; ;mcc_generated_files/pic18f_bootload.c: 442: void Check_Device_Reset ()
@@ -3902,7 +3874,7 @@ Version 4.0 HI-TECH Software Intermediate Code
 [f ]
 "444
 [; ;mcc_generated_files/pic18f_bootload.c: 444:     if (reset_pending == 1)
-[e $ ! == -> _reset_pending `i -> 1 `i 3271  ]
+[e $ ! == -> _reset_pending `i -> 1 `i 3265  ]
 "445
 [; ;mcc_generated_files/pic18f_bootload.c: 445:     {
 {
@@ -3912,11 +3884,11 @@ Version 4.0 HI-TECH Software Intermediate Code
 "447
 [; ;mcc_generated_files/pic18f_bootload.c: 447:     }
 }
-[e :U 3271 ]
+[e :U 3265 ]
 "448
 [; ;mcc_generated_files/pic18f_bootload.c: 448:     return;
-[e $UE 3270  ]
+[e $UE 3264  ]
 "449
 [; ;mcc_generated_files/pic18f_bootload.c: 449: }
-[e :UE 3270 ]
+[e :UE 3264 ]
 }
