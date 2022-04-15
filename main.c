@@ -67,7 +67,7 @@ void main(void)
 
     while (1)
     {
-    
+        __delay_ms(10);
     }
 }
 

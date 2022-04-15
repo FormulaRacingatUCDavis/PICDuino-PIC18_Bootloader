@@ -24,7 +24,7 @@ CLEAN_SUBPROJECTS=${CLEAN_SUBPROJECTS_${SUBPROJECTS}}
 
 
 # Project Name
-PROJECTNAME=PIC18_Bootloader_Test5.X
+PROJECTNAME=PICDuino-PIC18_Bootloader
 
 # Active Configuration
 DEFAULTCONF=default

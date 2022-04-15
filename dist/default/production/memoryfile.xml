@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project>
-  <executable name="dist/default/production\PIC18_Bootloader_Test5.X.production.hex">
+  <executable name="dist/default/production\PICDuino-PIC18_Bootloader.production.hex">
     <memory name="program">
       <units>bytes</units>
       <length>2304</length>
-      <used>2068</used>
-      <free>236</free>
+      <used>2082</used>
+      <free>222</free>
     </memory>
     <memory name="data">
       <units>bytes</units>
       <length>4096</length>
-      <used>166</used>
-      <free>3930</free>
+      <used>167</used>
+      <free>3929</free>
     </memory>
   </executable>
 </project>
